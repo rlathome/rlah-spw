@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>3709 Kenway St, Silver Spring — RLAH @properties Office Exclusive</title>
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --black: #222222;
+  --dark: #333333;
+  --gray-dark: #555555;
+  --gray: #888888;
+  --gray-light: #bbbbbb;
+  --border: #e5e5e5;
+  --bg-alt: #f7f7f5;
+  --bg-light: #f8f8f8;
+  --white: #ffffff;
+  --red: #c21c0d;
+  --font: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --display: 'Playfair Display', Georgia, serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--font); color: var(--dark); background: var(--white); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+
+/* HEADER */
+.header { position: sticky; top: 0; z-index: 100; background: var(--white); border-bottom: 1px solid var(--border); }
+.header__inner { display: flex; align-items: center; justify-content: space-between; padding: 14px 28px; max-width: 1400px; margin: 0 auto; }
+.header__logo img { height: 48px; width: auto; display: block; }
+.header__tag { font-size: 11px; letter-spacing: 1.2px; color: var(--gray); text-transform: uppercase; font-weight: 500; }
+
+/* EXCLUSIVE RIBBON */
+.ribbon { background: var(--black); color: var(--white); text-align: center; padding: 9px 20px; font-size: 11px; letter-spacing: 1.4px; text-transform: uppercase; font-weight: 600; }
+
+/* PHOTO GALLERY */
+.photo-gallery { position: relative; background: #000; height: 72vh; max-height: 780px; min-height: 400px; overflow: hidden; }
+.g-slide { position: absolute; inset: 0; opacity: 0; transition: opacity 0.4s ease; }
+.g-slide.active { opacity: 1; }
+.g-slide img { width: 100%; height: 100%; object-fit: cover; }
+.photo-gallery__nav { position: absolute; top: 50%; transform: translateY(-50%); width: 48px; height: 48px; border-radius: 50%; background: rgba(255,255,255,0.9); border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; z-index: 5; transition: background 0.15s; }
+.photo-gallery__nav:hover { background: var(--white); }
+.photo-gallery__nav svg { width: 20px; height: 20px; fill: var(--black); }
+.photo-gallery__nav--prev { left: 24px; }
+.photo-gallery__nav--next { right: 24px; }
+.photo-gallery__counter { position: absolute; bottom: 20px; right: 24px; background: rgba(0,0,0,0.55); color: var(--white); padding: 6px 14px; font-size: 12px; letter-spacing: 0.5px; z-index: 5; border-radius: 2px; }
+
+/* PRICE BAR */
+.price-bar { padding: 38px 28px; text-align: center; background: var(--white); border-bottom: 1px solid var(--border); }
+.price-bar__address { font-family: var(--display); font-size: 34px; color: var(--black); letter-spacing: -0.8px; font-weight: 500; margin-bottom: 6px; }
+.price-bar__city { font-size: 13px; color: var(--gray); letter-spacing: 1.4px; text-transform: uppercase; margin-bottom: 22px; }
+.price-bar__price { font-family: var(--display); font-size: 26px; color: var(--black); font-weight: 500; letter-spacing: -0.5px; margin-bottom: 16px; }
+.price-bar__facts { display: flex; justify-content: center; gap: 28px; flex-wrap: wrap; font-size: 13px; color: var(--gray-dark); letter-spacing: 0.3px; }
+.price-bar__facts span { display: inline-flex; align-items: center; }
+.price-bar__facts span + span::before { content: '•'; margin-right: 28px; color: var(--gray-light); }
+
+/* SECTION NAV */
+.sec-nav { position: sticky; top: 52px; background: var(--white); border-bottom: 1px solid var(--border); z-index: 90; }
+.sec-nav__inner { display: flex; justify-content: center; gap: 2px; padding: 0 20px; overflow-x: auto; max-width: 1400px; margin: 0 auto; }
+.sec-nav a { padding: 14px 18px; font-size: 12px; color: var(--gray-dark); letter-spacing: 0.8px; text-transform: uppercase; font-weight: 500; white-space: nowrap; transition: color 0.15s; border-bottom: 2px solid transparent; }
+.sec-nav a:hover { color: var(--black); border-bottom-color: var(--black); }
+
+/* SECTIONS */
+.section { padding: 70px 28px; }
+.section--alt { background: var(--bg-alt); }
+.section--white { background: var(--white); padding: 70px 28px; }
+.section__inner { max-width: 960px; margin: 0 auto; }
+.section__eyebrow { font-size: 11px; letter-spacing: 1.8px; color: var(--gray); text-transform: uppercase; font-weight: 600; margin-bottom: 12px; text-align: center; }
+.section__title { font-family: var(--display); font-size: 30px; color: var(--black); text-align: center; letter-spacing: -0.6px; margin-bottom: 38px; font-weight: 500; }
+
+/* OVERVIEW */
+.overview { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 24px; max-width: 900px; margin: 0 auto; }
+.overview__item { text-align: center; padding: 22px 14px; background: var(--white); border: 1px solid var(--border); }
+.overview__label { font-size: 11px; letter-spacing: 1.4px; color: var(--gray); text-transform: uppercase; font-weight: 600; margin-bottom: 8px; }
+.overview__value { font-family: var(--display); font-size: 22px; color: var(--black); font-weight: 500; letter-spacing: -0.3px; }
+
+/* DESCRIPTION */
+.description { max-width: 720px; margin: 0 auto; font-size: 15px; color: var(--gray-dark); line-height: 1.85; }
+.description p { margin-bottom: 16px; }
+.description p:last-child { margin-bottom: 0; }
+
+/* FLOOR PLANS */
+.fp-gallery { position: relative; background: var(--bg-alt); max-width: 960px; margin: 0 auto; aspect-ratio: 4/3; border: 1px solid var(--border); overflow: hidden; }
+.fp-gallery .g-slide img { width: 100%; height: 100%; object-fit: contain; background: var(--white); }
+.fp-nav { position: absolute; top: 50%; transform: translateY(-50%); width: 42px; height: 42px; border-radius: 50%; background: rgba(34,34,34,0.75); border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; z-index: 5; transition: background 0.15s; }
+.fp-nav:hover { background: rgba(34,34,34,0.92); }
+.fp-nav svg { width: 18px; height: 18px; fill: var(--white); }
+.fp-nav--prev { left: 16px; }
+.fp-nav--next { right: 16px; }
+.fp-label-wrap { text-align: center; margin-top: 18px; font-size: 13px; letter-spacing: 1px; color: var(--gray-dark); text-transform: uppercase; font-weight: 500; }
+.fp-counter { color: var(--gray); font-size: 12px; margin-left: 10px; }
+
+/* FEATURES */
+.features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0; border-top: 1px solid var(--border); border-left: 1px solid var(--border); max-width: 960px; margin: 0 auto; }
+.features-grid__item { display: flex; justify-content: space-between; padding: 14px 20px; border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); font-size: 13px; }
+.features-grid__label { color: var(--gray-dark); }
+.features-grid__value { color: var(--black); font-weight: 500; text-align: right; }
+
+/* INTERIOR FEATURES */
+.interior-list { max-width: 720px; margin: 0 auto; columns: 2; column-gap: 40px; font-size: 14px; color: var(--gray-dark); }
+.interior-list li { padding: 7px 0; list-style: none; position: relative; padding-left: 18px; break-inside: avoid; }
+.interior-list li::before { content: ''; position: absolute; left: 0; top: 15px; width: 6px; height: 6px; background: var(--black); border-radius: 50%; }
+
+/* TAXES */
+.tax-table { max-width: 560px; margin: 0 auto; border: 1px solid var(--border); }
+.tax-row { display: flex; justify-content: space-between; padding: 14px 22px; border-bottom: 1px solid var(--border); font-size: 13px; }
+.tax-row:last-child { border-bottom: none; }
+.tax-row--total { background: var(--bg-alt); font-weight: 600; }
+.tax-row__label { color: var(--gray-dark); }
+.tax-row__value { color: var(--black); }
+
+/* LOCATION */
+.map-wrap { max-width: 960px; margin: 0 auto; aspect-ratio: 16/9; border: 1px solid var(--border); overflow: hidden; }
+.map-wrap iframe { width: 100%; height: 100%; border: 0; display: block; }
+
+/* CONTACT */
+.contact { max-width: 520px; margin: 0 auto; background: var(--white); padding: 36px 30px; border: 1px solid var(--border); }
+.contact__subtitle { font-size: 13px; color: var(--gray-dark); text-align: center; line-height: 1.7; margin-bottom: 26px; }
+.contact__card { display: flex; gap: 18px; align-items: center; padding: 20px; background: var(--bg-alt); margin-bottom: 22px; }
+.contact__photo { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; object-position: center 20%; background: #ddd; flex-shrink: 0; }
+.contact__name { font-family: var(--display); font-size: 20px; color: var(--black); font-weight: 500; letter-spacing: -0.3px; }
+.contact__title { font-size: 11px; color: var(--gray); letter-spacing: 1px; text-transform: uppercase; margin-top: 3px; }
+.contact__actions { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 14px; }
+.contact__btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 12px 8px; font-size: 13px; font-weight: 600; border: 1px solid var(--black); color: var(--black); background: var(--white); cursor: pointer; font-family: var(--font); transition: all 0.15s; text-align: center; }
+.contact__btn:hover { background: var(--black); color: var(--white); }
+.contact__btn svg { width: 14px; height: 14px; fill: currentColor; }
+.contact__cta { width: 100%; padding: 14px; font-size: 13px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; border: none; color: var(--white); background: var(--black); cursor: pointer; font-family: var(--font); transition: background 0.15s; display: block; text-align: center; margin-bottom: 12px; }
+.contact__cta:hover { background: #000; }
+.contact__share { display: inline-flex; align-items: center; justify-content: center; gap: 6px; width: 100%; padding: 12px 8px; margin-bottom: 20px; font-size: 13px; font-weight: 600; border: none; color: var(--white); background: var(--red); cursor: pointer; font-family: var(--font); transition: background 0.15s; }
+.contact__share:hover { background: #a8180a; }
+.contact__share svg { width: 15px; height: 15px; fill: currentColor; }
+.contact__pitch { margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 12px; color: var(--gray-dark); line-height: 1.7; text-align: center; }
+
+/* TOAST */
+.share-toast { position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%) translateY(120%); background: var(--black); color: var(--white); padding: 12px 24px; font-size: 13px; z-index: 200; transition: transform 0.3s ease; border-radius: 3px; }
+.share-toast.visible { transform: translateX(-50%) translateY(0); }
+
+/* FOOTER */
+.footer { background: var(--black); padding: 36px 40px; text-align: center; }
+.footer__logo { margin-bottom: 16px; }
+.footer__logo img { height: 56px; margin: 0 auto; }
+.footer__text { font-size: 11px; color: #999; max-width: 640px; margin: 0 auto; line-height: 1.7; }
+.footer__badge { margin-top: 20px; }
+.footer__badge img { height: 56px; width: auto; margin: 0 auto; display: block; opacity: 0.8; }
+
+/* RESPONSIVE */
+@media (max-width: 760px) {
+  .photo-gallery { height: 55vh; min-height: 320px; }
+  .photo-gallery__nav { width: 40px; height: 40px; }
+  .photo-gallery__nav--prev { left: 12px; }
+  .photo-gallery__nav--next { right: 12px; }
+  .price-bar { padding: 28px 20px; }
+  .price-bar__address { font-size: 26px; }
+  .price-bar__facts { gap: 18px; font-size: 12px; }
+  .price-bar__facts span + span::before { margin-right: 18px; }
+  .section { padding: 50px 20px; }
+  .section--white { padding: 50px 20px; }
+  .section__title { font-size: 24px; margin-bottom: 28px; }
+  .sec-nav { top: 52px; }
+  .sec-nav__inner { justify-content: flex-start; }
+  .sec-nav a { padding: 12px 14px; font-size: 11px; }
+  .interior-list { columns: 1; }
+  .contact__actions { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="header__inner">
+    <a href="https://www.atproperties.com/dc/" class="header__logo">
+      <img src="assets/logo.png" alt="RLAH @properties">
+    </a>
+    <div class="header__tag">Office Exclusive</div>
+  </div>
+</header>
+
+<!-- EXCLUSIVE RIBBON -->
+<div class="ribbon">Office Exclusive — Contact Agent for Details</div>
+
+<!-- PHOTO GALLERY -->
+<div class="photo-gallery" id="photo-gallery">
+  <div class="g-slide active"><img src="photos/01.jpg" alt="3709 Kenway St exterior"></div>
+  <div class="g-slide"><img src="photos/02.jpg" alt="3709 Kenway St entryway"></div>
+  <div class="g-slide"><img src="photos/03.jpg" alt="3709 Kenway St rear covered deck"></div>
+  <button class="photo-gallery__nav photo-gallery__nav--prev" id="photo-prev" aria-label="Previous photo">
+    <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+  </button>
+  <button class="photo-gallery__nav photo-gallery__nav--next" id="photo-next" aria-label="Next photo">
+    <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+  </button>
+  <div class="photo-gallery__counter"><span id="photo-idx">1</span> / 3</div>
+</div>
+
+<!-- PRICE BAR -->
+<div class="price-bar">
+  <div class="price-bar__address">3709 Kenway Street</div>
+  <div class="price-bar__city">Silver Spring, Maryland 20906</div>
+  <div class="price-bar__price">Contact Agent for Details</div>
+  <div class="price-bar__facts">
+    <span>3 Bedrooms</span>
+    <span>2 Baths</span>
+    <span>2,570 Sq Ft</span>
+    <span>0.148 Acres</span>
+  </div>
+</div>
+
+<!-- SECTION NAV -->
+<nav class="sec-nav">
+  <div class="sec-nav__inner">
+    <a href="#overview">Overview</a>
+    <a href="#description">Description</a>
+    <a href="#floor-plans">Floor Plans</a>
+    <a href="#features">Features</a>
+    <a href="#interior">Interior</a>
+    <a href="#taxes">Taxes</a>
+    <a href="#location">Location</a>
+    <a href="#schools">Schools</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- OVERVIEW -->
+<section class="section section--white" id="overview">
+  <div class="section__inner">
+    <div class="section__eyebrow">At a Glance</div>
+    <h2 class="section__title">Overview</h2>
+    <div class="overview">
+      <div class="overview__item">
+        <div class="overview__label">Bedrooms</div>
+        <div class="overview__value">3</div>
+      </div>
+      <div class="overview__item">
+        <div class="overview__label">Baths</div>
+        <div class="overview__value">2</div>
+      </div>
+      <div class="overview__item">
+        <div class="overview__label">Interior</div>
+        <div class="overview__value">2,570 SF</div>
+      </div>
+      <div class="overview__item">
+        <div class="overview__label">Lot</div>
+        <div class="overview__value">6,445 SF</div>
+      </div>
+      <div class="overview__item">
+        <div class="overview__label">Year Built</div>
+        <div class="overview__value">1956</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DESCRIPTION -->
+<section class="section section--alt" id="description">
+  <div class="section__inner">
+    <div class="section__eyebrow">About the Home</div>
+    <h2 class="section__title">Description</h2>
+    <div class="description">
+      <p>A new private exclusive available to show now — a strong off-market find before it reaches the broader market. Conveniently located near Glenmont Metro, this 2,500+ sq. ft. home offers the kind of space, flexibility, and convenience buyers have been searching for.</p>
+      <p>The entry level features a welcoming living area and a private office with built-ins. Upstairs, you'll find three bedrooms and a full bath. The lower level opens to a spacious open-concept kitchen with granite counters and stainless steel appliances, flowing seamlessly into a large addition with generous living and entertaining space, a bar, and an additional full bath. There is also another finished level that can function as additional living space, a recreation area, or even a bedroom.</p>
+      <p>Outdoor living is just as impressive, with a spacious covered deck, fenced backyard, and a large storage shed. Solar panels add even more value to this versatile home. A great opportunity to showcase something special to your clients off-market and make a strong impression through early discovery.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FLOOR PLANS -->
+<section class="section section--white" id="floor-plans">
+  <div class="section__inner">
+    <div class="section__eyebrow">Layout</div>
+    <h2 class="section__title">Floor Plans</h2>
+    <div class="fp-gallery" id="fp-gallery">
+      <div class="g-slide active"><img src="photos/fp-01.jpg" alt="All levels composite"></div>
+      <div class="g-slide"><img src="photos/fp-02.jpg" alt="Lower / Main Living Level"></div>
+      <div class="g-slide"><img src="photos/fp-03.jpg" alt="Main Level"></div>
+      <div class="g-slide"><img src="photos/fp-04.jpg" alt="Upper Level"></div>
+      <button class="fp-nav fp-nav--prev" id="fp-prev" aria-label="Previous floor plan">
+        <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+      </button>
+      <button class="fp-nav fp-nav--next" id="fp-next" aria-label="Next floor plan">
+        <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+      </button>
+    </div>
+    <div class="fp-label-wrap">
+      <span id="fp-label">All Levels</span>
+      <span class="fp-counter"><span id="fp-idx">1</span> / 4</span>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section section--alt" id="features">
+  <div class="section__inner">
+    <div class="section__eyebrow">The Details</div>
+    <h2 class="section__title">Full Features</h2>
+    <div class="features-grid">
+      <div class="features-grid__item"><span class="features-grid__label">Style</span><span class="features-grid__value">Split Level</span></div>
+      <div class="features-grid__item"><span class="features-grid__label">Year Built</span><span class="features-grid__value">1956</span></div>
+      <div class="features-grid__item"><span class="features-grid__label">Stories</span><span class="features-grid__value">2</span></div>
+      <div class="features-grid__item"><span class="features-grid__label">Total Interior SF</span><span class="features-grid__value">~2,570</span></div>
+      <div class="features-grid__item"><span class="features-grid__label">Lot Size</span><span class="features-grid__value">6,445 SF / 0.148 AC</span></div>
+      <div class="features-grid__item"><span class="features-grid__label">Exterior</span><span class="features-grid__value">Brick</span></div>
+      <div class="features-grid__item"><span class="features-grid__label">Roof</span><span class="features-grid__value">Shingle — Composite</span></div>
+      <div class="features-grid__item"><span class="features-grid__label">Basement</span><span class="features-grid__value">Finished</span></div>
+      <div class="features-grid__item"><span class="features-grid__label">Fireplace</span><span class="features-grid__value">Yes (1)</span></div>
+      <div class="features-grid__item"><span class="features-grid__label">Heating</span><span class="features-grid__value">Hot / Warm Air</span></div>
+      <div class="features-grid__item"><span class="features-grid__label">Cooling</span><span class="features-grid__value">Combined System</span></div>
+      <div class="features-grid__item"><span class="features-grid__label">Sewer</span><span class="features-grid__value">Public</span></div>
+      <div class="features-grid__item"><span class="features-grid__label">Zoning</span><span class="features-grid__value">R60 — Residential</span></div>
+      <div class="features-grid__item"><span class="features-grid__label">Subdivision</span><span class="features-grid__value">Connecticut Avenue Estates</span></div>
+      <div class="features-grid__item"><span class="features-grid__label">County</span><span class="features-grid__value">Montgomery, MD</span></div>
+      <div class="features-grid__item"><span class="features-grid__label">Tax ID</span><span class="features-grid__value">161301226654</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- INTERIOR FEATURES -->
+<section class="section section--white" id="interior">
+  <div class="section__inner">
+    <div class="section__eyebrow">Inside the Home</div>
+    <h2 class="section__title">Interior Features</h2>
+    <ul class="interior-list">
+      <li>Open-concept kitchen with granite counters</li>
+      <li>Stainless steel appliances</li>
+      <li>Entry-level living area</li>
+      <li>Private office with built-ins</li>
+      <li>Three bedrooms on upper level</li>
+      <li>Walk-in closet in primary bedroom</li>
+      <li>Spacious living + entertaining addition</li>
+      <li>Built-in bar</li>
+      <li>Two full bathrooms</li>
+      <li>Finished basement recreation room</li>
+      <li>Gas fireplace</li>
+      <li>Dedicated laundry room</li>
+      <li>Covered rear deck</li>
+      <li>Fenced backyard</li>
+      <li>Large storage shed</li>
+      <li>Solar panels</li>
+    </ul>
+  </div>
+</section>
+
+<!-- TAXES -->
+<section class="section section--alt" id="taxes">
+  <div class="section__inner">
+    <div class="section__eyebrow">Public Record</div>
+    <h2 class="section__title">Taxes &amp; Assessments</h2>
+    <div class="tax-table">
+      <div class="tax-row"><span class="tax-row__label">Tax Year</span><span class="tax-row__value">2026</span></div>
+      <div class="tax-row"><span class="tax-row__label">Annual Tax (Est.)</span><span class="tax-row__value">$6,181</span></div>
+      <div class="tax-row"><span class="tax-row__label">State / County Tax</span><span class="tax-row__value">$5,289</span></div>
+      <div class="tax-row"><span class="tax-row__label">Special Tax</span><span class="tax-row__value">$221</span></div>
+      <div class="tax-row"><span class="tax-row__label">Refuse Fee</span><span class="tax-row__value">$671</span></div>
+      <div class="tax-row"><span class="tax-row__label">Land Assessment</span><span class="tax-row__value">$195,000</span></div>
+      <div class="tax-row"><span class="tax-row__label">Building Assessment</span><span class="tax-row__value">$306,100</span></div>
+      <div class="tax-row tax-row--total"><span class="tax-row__label">Total Assessment</span><span class="tax-row__value">$473,300</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section class="section section--white" id="location">
+  <div class="section__inner">
+    <div class="section__eyebrow">Where It Is</div>
+    <h2 class="section__title">Location</h2>
+    <div class="map-wrap">
+      <iframe
+        src="https://www.google.com/maps?q=3709+Kenway+St,+Silver+Spring,+MD+20906&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Map of 3709 Kenway St, Silver Spring, MD"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- SCHOOLS -->
+<section class="section section--alt" id="schools">
+  <div class="section__inner">
+    <div class="section__eyebrow">Education</div>
+    <h2 class="section__title">Schools</h2>
+    <div class="description" style="text-align:center;">
+      <p>Served by <strong>Montgomery County Public Schools</strong>. Buyers should independently verify school assignments with MCPS as boundaries may change.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section section--white" id="contact">
+  <div class="section__inner">
+    <div class="section__eyebrow">Listed By</div>
+    <h2 class="section__title">Contact the Listing Agent</h2>
+    <div class="contact">
+      <p class="contact__subtitle">This is an office exclusive listing at the direction of the seller, who has requested that the marketing of this property not be publicly displayed across all real estate portals at this time. Contact the listing agent directly for showing details, pricing, and additional information.</p>
+      <div class="contact__card">
+        <img src="photos/agent.jpg" alt="Daniel Llerena" class="contact__photo">
+        <div>
+          <div class="contact__name">Daniel Llerena</div>
+          <div class="contact__title">RLAH @properties</div>
+        </div>
+      </div>
+      <div class="contact__actions">
+        <a class="contact__btn" href="tel:+12408764670">
+          <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
+          Call
+        </a>
+        <a class="contact__btn" href="sms:+12408764670?body=Hi%20Daniel%2C%20I'm%20interested%20in%203709%20Kenway%20St">
+          <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+          Text
+        </a>
+        <a class="contact__btn" href="mailto:daniel@cosmosre.com?subject=3709%20Kenway%20St%20-%20Office%20Exclusive">
+          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          Email
+        </a>
+      </div>
+      <a class="contact__cta" href="mailto:daniel@cosmosre.com?subject=3709%20Kenway%20St%20-%20Office%20Exclusive%20-%20Showing%20Request">Request a Showing</a>
+      <button class="contact__share" id="shareBtn">
+        <svg viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z"/></svg>
+        Share This Listing
+      </button>
+      <p class="contact__pitch">RLAH @properties maintains the largest off-market property database in the DMV. Whether you're looking to access listings before they hit the public market, or you're interested in marketing your own property with this level of privacy and exclusivity, reach out through the contact information above.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer__logo">
+    <a href="https://www.atproperties.com/dc/">
+      <img src="assets/logo-white.png" alt="RLAH @properties">
+    </a>
+  </div>
+  <p class="footer__text">The Washington Area's #1 Boutique Brokerage.<br><br>
+  This is an office exclusive listing marketed by RLAH @properties at the direction of the seller. This property is not currently syndicated on public real estate platforms and is being marketed directly by the listing brokerage. All information deemed reliable but not guaranteed. Contact the listing agent for complete details.<br><br>
+  Each office is independently owned and operated. RLAH @properties and its trademarks are the registered and unregistered trademarks of RLAH @properties.</p>
+  <div class="footer__badge">
+    <img src="assets/equal-housing.png" alt="Equal Housing Opportunity">
+  </div>
+</footer>
+
+<div class="share-toast" id="shareToast">Link copied to clipboard</div>
+
+<script>
+/* PHOTO GALLERY */
+(function () {
+  var slides = document.querySelectorAll('#photo-gallery .g-slide');
+  var total  = slides.length;
+  var cur    = 0;
+  var idxEl  = document.getElementById('photo-idx');
+
+  function goTo(i) {
+    slides[cur].classList.remove('active');
+    cur = ((i % total) + total) % total;
+    slides[cur].classList.add('active');
+    idxEl.textContent = cur + 1;
+  }
+
+  document.getElementById('photo-prev').addEventListener('click', function () { goTo(cur - 1); });
+  document.getElementById('photo-next').addEventListener('click', function () { goTo(cur + 1); });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowLeft')  goTo(cur - 1);
+    if (e.key === 'ArrowRight') goTo(cur + 1);
+  });
+
+  var tx = 0;
+  var el = document.getElementById('photo-gallery');
+  el.addEventListener('touchstart', function (e) { tx = e.changedTouches[0].screenX; }, { passive: true });
+  el.addEventListener('touchend',   function (e) {
+    var d = tx - e.changedTouches[0].screenX;
+    if (Math.abs(d) > 50) goTo(cur + (d > 0 ? 1 : -1));
+  }, { passive: true });
+}());
+
+/* FLOOR PLAN GALLERY */
+(function () {
+  var slides  = document.querySelectorAll('#fp-gallery .g-slide');
+  var labels  = ['All Levels', 'Lower / Main Living Level', 'Main Level', 'Upper Level'];
+  var total   = slides.length;
+  var cur     = 0;
+  var idxEl   = document.getElementById('fp-idx');
+  var labelEl = document.getElementById('fp-label');
+
+  function goTo(i) {
+    slides[cur].classList.remove('active');
+    cur = ((i % total) + total) % total;
+    slides[cur].classList.add('active');
+    idxEl.textContent   = cur + 1;
+    labelEl.textContent = labels[cur];
+  }
+
+  document.getElementById('fp-prev').addEventListener('click', function () { goTo(cur - 1); });
+  document.getElementById('fp-next').addEventListener('click', function () { goTo(cur + 1); });
+
+  var tx = 0;
+  var el = document.getElementById('fp-gallery');
+  el.addEventListener('touchstart', function (e) { tx = e.changedTouches[0].screenX; }, { passive: true });
+  el.addEventListener('touchend',   function (e) {
+    var d = tx - e.changedTouches[0].screenX;
+    if (Math.abs(d) > 50) goTo(cur + (d > 0 ? 1 : -1));
+  }, { passive: true });
+}());
+
+/* SHARE BUTTON */
+document.getElementById('shareBtn').addEventListener('click', function () {
+  var toast = document.getElementById('shareToast');
+  var url   = window.location.href;
+  function showToast() {
+    toast.classList.add('visible');
+    setTimeout(function () { toast.classList.remove('visible'); }, 2500);
+  }
+  if (navigator.share) {
+    navigator.share({ title: '3709 Kenway St — RLAH @properties Office Exclusive', url: url });
+  } else if (navigator.clipboard) {
+    navigator.clipboard.writeText(url).then(showToast);
+  } else {
+    var inp = document.createElement('input');
+    inp.value = url;
+    document.body.appendChild(inp);
+    inp.select();
+    document.execCommand('copy');
+    document.body.removeChild(inp);
+    showToast();
+  }
+});
+</script>
+
+</body>
+</html>
