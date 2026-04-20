@@ -4,13 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>914 N St NW, Washington, DC 20001 | RLAH @properties Office Exclusive</title>
-<meta name="description" content="Office Exclusive — 914 N St NW, Washington, DC 20001. 2 Beds, 2 Baths, 1 Half Bath, 1,392 Sq Ft. Contact agent for details.">
+<meta name="description" content="Office Exclusive — 914 N St NW, Washington, DC 20001. 2 Beds, 2 Baths, 1 Half Bath, 1,908 Sq Ft. Contact agent for details.">
 <meta property="og:title" content="914 N St NW | RLAH @properties Office Exclusive">
-<meta property="og:description" content="2 Beds | 2 Baths | 1 Half Bath | 1,392 Sq Ft — Office Exclusive in Shaw. Contact agent for details.">
+<meta property="og:description" content="2 Beds | 2 Baths | 1 Half Bath | 1,908 Sq Ft — Office Exclusive in Shaw. Contact agent for details.">
 <meta property="og:image" content="photos/01.jpg">
 <meta property="og:type" content="website">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23c21c0d'/%3E%3Ctext x='32' y='42' font-family='Arial,Helvetica,sans-serif' font-size='18' font-weight='bold' fill='white' text-anchor='middle' letter-spacing='1'%3ERLAH%3C/text%3E%3C/svg%3E">
-<link rel="apple-touch-icon" href="assets/favicon-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -111,17 +110,36 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .contact__action:hover { background: var(--bg-alt); border-color: var(--gray-light); }
 .contact__action svg { width: 15px; height: 15px; fill: currentColor; }
 
+.share__btn { display: inline-flex; align-items: center; gap: 8px; background: var(--red); color: var(--white); padding: 12px 24px; font-size: 13px; font-weight: 600; letter-spacing: 0.3px; transition: background 0.15s; margin-bottom: 20px; }
+.share__btn:hover { background: #a01509; }
+.share__btn svg { width: 15px; height: 15px; fill: currentColor; }
+
 .offmarket { max-width: 560px; margin: 0 auto; text-align: center; border-top: 1px solid var(--border); padding-top: 28px; margin-top: 8px; }
 .offmarket__title { font-size: 16px; font-weight: 700; color: var(--black); margin-bottom: 8px; }
-.offmarket__text { font-size: 14px; color: var(--gray-dark); line-height: 1.7; margin-bottom: 16px; }
-.offmarket__btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: var(--white); color: var(--black); border: 2px solid var(--black); padding: 12px 28px; font-size: 13px; font-weight: 600; letter-spacing: 0.3px; transition: background 0.15s, color 0.15s; }
-.offmarket__btn:hover { background: var(--black); color: var(--white); }
+.offmarket__text { font-size: 14px; color: var(--gray-dark); line-height: 1.7; }
+
+.floor-plan__image { width: 100%; max-width: 800px; height: auto; border: 1px solid var(--border); border-radius: 4px; margin: 0 auto; display: block; }
+
+.neighborhood-gallery { margin-top: 24px; position: relative; }
+.neighborhood-gallery__container { position: relative; width: 100%; aspect-ratio: 3/2; max-height: 60vh; background: #111; overflow: hidden; border: 1px solid var(--border); border-radius: 4px; }
+.neighborhood-gallery__slide { position: absolute; inset: 0; opacity: 0; transition: opacity 0.45s ease; pointer-events: none; }
+.neighborhood-gallery__slide.active { opacity: 1; pointer-events: auto; }
+.neighborhood-gallery__slide img { width: 100%; height: 100%; object-fit: cover; }
+.neighborhood-gallery__btn { position: absolute; top: 50%; transform: translateY(-50%); width: 40px; height: 40px; background: rgba(255,255,255,0.9); border-radius: 50%; display: flex; align-items: center; justify-content: center; z-index: 2; transition: background 0.15s, transform 0.15s; }
+.neighborhood-gallery__btn:hover { background: #fff; transform: translateY(-50%) scale(1.05); }
+.neighborhood-gallery__btn--prev { left: 16px; }
+.neighborhood-gallery__btn--next { right: 16px; }
+.neighborhood-gallery__btn svg { width: 16px; height: 16px; fill: var(--dark); }
+.neighborhood-gallery__count { position: absolute; bottom: 12px; right: 16px; background: rgba(0,0,0,0.55); color: #fff; padding: 4px 12px; border-radius: 3px; font-size: 11px; font-weight: 500; z-index: 2; }
+
+.video-embed { margin-top: 32px; }
+.video-embed__container { width: 100%; max-width: 800px; margin: 0 auto; border: 1px solid var(--border); border-radius: 4px; overflow: hidden; }
 
 .footer { background: var(--black); padding: 36px 40px; text-align: center; }
 .footer__logo img { height: 22px; margin: 0 auto 16px; }
 .footer__text { font-size: 11px; color: #999; max-width: 640px; margin: 0 auto; line-height: 1.7; }
 .footer__badge { margin-top: 20px; }
-.footer__badge svg { height: 36px; width: auto; margin: 0 auto; display: block; }
+.footer__badge img { height: 48px; width: auto; margin: 0 auto; display: block; opacity: 0.8; }
 
 @media (max-width: 768px) {
   .header { padding: 0 20px; }
@@ -144,6 +162,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .description__text.collapsible.expanded { max-height: none; }
   .description__text.collapsible.expanded::after { display: none; }
   .description__toggle { display: inline-block; }
+  .neighborhood-gallery__container { aspect-ratio: 4/3; max-height: 50vh; }
 }
 @media (max-width: 480px) {
   .quick-facts { grid-template-columns: 1fr; }
@@ -160,19 +179,32 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   <a href="tel:2025188781" class="header__phone">202.518.8781</a>
 </header>
 
-<div class="exclusive-ribbon">Office Exclusive &mdash; Contact Agent for Details</div>
+<div class="exclusive-ribbon">Office Exclusive — Contact Agent for Details</div>
 
 <div class="gallery" id="gallery">
   <div class="gallery__slide active"><img src="photos/01.jpg" alt="914 N St NW Photo 1"></div>
   <div class="gallery__slide"><img src="photos/02.jpg" alt="914 N St NW Photo 2"></div>
   <div class="gallery__slide"><img src="photos/03.jpg" alt="914 N St NW Photo 3"></div>
+  <div class="gallery__slide"><img src="photos/04.jpg" alt="914 N St NW Photo 4"></div>
+  <div class="gallery__slide"><img src="photos/05.jpg" alt="914 N St NW Photo 5"></div>
+  <div class="gallery__slide"><img src="photos/06.jpg" alt="914 N St NW Photo 6"></div>
+  <div class="gallery__slide"><img src="photos/07.jpg" alt="914 N St NW Photo 7"></div>
+  <div class="gallery__slide"><img src="photos/08.jpg" alt="914 N St NW Photo 8"></div>
+  <div class="gallery__slide"><img src="photos/09.jpg" alt="914 N St NW Photo 9"></div>
+  <div class="gallery__slide"><img src="photos/10.jpg" alt="914 N St NW Photo 10"></div>
+  <div class="gallery__slide"><img src="photos/11.jpg" alt="914 N St NW Photo 11"></div>
+  <div class="gallery__slide"><img src="photos/12.jpg" alt="914 N St NW Photo 12"></div>
+  <div class="gallery__slide"><img src="photos/13.jpg" alt="914 N St NW Photo 13"></div>
+  <div class="gallery__slide"><img src="photos/14.jpg" alt="914 N St NW Photo 14"></div>
+  <div class="gallery__slide"><img src="photos/15.jpg" alt="914 N St NW Photo 15"></div>
+  <div class="gallery__slide"><img src="photos/16.jpg" alt="914 N St NW Photo 16"></div>
   <button class="gallery__btn gallery__btn--prev" aria-label="Previous photo">
     <svg viewBox="0 0 24 24"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/></svg>
   </button>
   <button class="gallery__btn gallery__btn--next" aria-label="Next photo">
     <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
   </button>
-  <div class="gallery__count"><span id="idx">1</span> / <span id="tot">3</span></div>
+  <div class="gallery__count"><span id="idx">1</span> / <span id="tot">16</span></div>
 </div>
 
 <div class="price-bar">
@@ -182,7 +214,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
       <div class="price-bar__stat"><div class="price-bar__stat-num">2</div><div class="price-bar__stat-label">beds</div></div>
       <div class="price-bar__stat"><div class="price-bar__stat-num">2</div><div class="price-bar__stat-label">baths</div></div>
       <div class="price-bar__stat"><div class="price-bar__stat-num">1</div><div class="price-bar__stat-label">half bath</div></div>
-      <div class="price-bar__stat"><div class="price-bar__stat-num">1,392</div><div class="price-bar__stat-label">square ft</div></div>
+      <div class="price-bar__stat"><div class="price-bar__stat-num">1,908</div><div class="price-bar__stat-label">square ft</div></div>
     </div>
     <a href="#contact" class="price-bar__cta">
       <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
@@ -193,9 +225,11 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 <nav class="section-nav">
   <a href="#overview">Overview</a><span class="section-nav__sep"></span>
+  <a href="#floorplan">Floor Plan</a><span class="section-nav__sep"></span>
   <a href="#features">Full Features</a><span class="section-nav__sep"></span>
   <a href="#taxes">Taxes</a><span class="section-nav__sep"></span>
   <a href="#location">Location</a><span class="section-nav__sep"></span>
+  <a href="#neighborhood">Neighborhood</a><span class="section-nav__sep"></span>
   <a href="#schools">Schools</a><span class="section-nav__sep"></span>
   <a href="#contact">Contact</a>
 </nav>
@@ -221,12 +255,19 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 <div class="section--alt">
   <div class="section__inner">
-    <p class="description__text collapsible" id="descText">There is no property description provided at this time. Please contact the listing agent for more details not included in this listing detail page.</p>
+    <p class="description__text collapsible" id="descText">TWO-UNIT SHAWportunity! Maybe it's the touch of fresh teal trim against time-tested brick, or the Little Free Library greeting passersby…? Regardless, it's obvious that genuine whimsy infuses this welcoming Shaw row home. Step onto warmly original hardwood floors, meeting the bespoke designer tile of the renovated kitchen. The fireplace will lift your spirits through any winter frost, while the rear courtyard garden promises summertime salvation. After ascending the preciously papered and naturally lit restored central staircase, you'll find front and back bedrooms and exposed brick, along with the jewel in this queen's crown: a fully tiled spa bath with skylight, dual shower heads, and deep soaking tub, promising wet release from whatever the outside world might dish out. Speaking of dishes, however, this resplendent residence shares the block with some of the city's very best. A few doors down, next to the incomparable craft wholegrain Seylou Bakery & Mill, is the entrance to Blagden Alley. This urban wonderland serves up Michelin guide standouts Causa, The Dabney, and Tiger Fork, for starters. And desserts! Those are but a few of the delectable neighborhood denizens. At 914 N St. NW, you'll find so very much at your doorstep, and on your palate. Plus the convenience of the Convention Center Metro merely a block distant. Back home, this 2-Bed, 1.5-Bath beauty sweetens the deal with a fully separate lower-level unit, ready to serve as an elaborate guest suite or income-generating offering with proven Airbnb results. Boasting expert upgrades and pride of place location, this Shaw opportunity does not need to knock; it will seduce you with a wink.</p>
     <button class="description__toggle" id="descToggle">Continue Reading</button>
   </div>
 </div>
 
-<div class="section--white" id="features">
+<div class="section--white" id="floorplan">
+  <div class="section__inner">
+    <h2 class="features__title">Floor Plan</h2>
+    <img src="photos/floor-plan.png" alt="914 N St NW Floor Plan - All 3 Levels" class="floor-plan__image">
+  </div>
+</div>
+
+<div class="section--alt" id="features">
   <div class="section__inner">
     <h2 class="features__title">Full Features</h2>
     <div class="features__grid">
@@ -236,10 +277,11 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
       <div class="features__row"><span class="features__label">Year Built</span><span class="features__value">1880</span></div>
       <div class="features__row"><span class="features__label">Year Renovated</span><span class="features__value">2017</span></div>
       <div class="features__row"><span class="features__label">Levels</span><span class="features__value">3</span></div>
-      <div class="features__row"><span class="features__label">Square Feet</span><span class="features__value">1,392</span></div>
+      <div class="features__row"><span class="features__label">Square Feet</span><span class="features__value">1,908</span></div>
       <div class="features__row"><span class="features__label">Lot Size</span><span class="features__value">931 Sq Ft</span></div>
       <div class="features__row"><span class="features__label">Beds</span><span class="features__value">2</span></div>
       <div class="features__row"><span class="features__label">Baths</span><span class="features__value">2 Full / 1 Half</span></div>
+      <div class="features__row"><span class="features__label">Rental Unit</span><span class="features__value">Separate Lower-Level Unit with Independent Entrance</span></div>
       <div class="features__row"><span class="features__label">Cooling</span><span class="features__value">Central A/C</span></div>
       <div class="features__row"><span class="features__label">Heating</span><span class="features__value">90% Forced Air</span></div>
       <div class="features__row"><span class="features__label">Heating Fuel</span><span class="features__value">Natural Gas</span></div>
@@ -256,7 +298,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   </div>
 </div>
 
-<div class="section--alt">
+<div class="section--white">
   <div class="section__inner">
     <h2 class="features__title">Interior Features</h2>
     <div class="features__grid">
@@ -267,7 +309,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   </div>
 </div>
 
-<div class="section--white" id="taxes">
+<div class="section--alt" id="taxes">
   <div class="section__inner">
     <h2 class="features__title">Taxes &amp; Assessments</h2>
     <div class="features__grid">
@@ -280,7 +322,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   </div>
 </div>
 
-<div class="section--alt" id="location">
+<div class="section--white" id="location">
   <div class="section__inner">
     <h2 class="map-section__title">Location</h2>
     <div class="features__grid" style="margin-bottom:20px">
@@ -291,6 +333,40 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     </div>
     <div class="map-wrap">
       <iframe src="https://maps.google.com/maps?q=914+N+St+NW,+Washington,+DC+20001&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="914 N St NW on map"></iframe>
+    </div>
+  </div>
+</div>
+
+<div class="section--alt" id="neighborhood">
+  <div class="section__inner">
+    <h2 class="features__title">Neighborhood</h2>
+    <p style="margin-bottom: 24px; color: var(--gray-dark); line-height: 1.7;">Shaw is one of DC's most vibrant neighborhoods, featuring stunning street art, award-winning restaurants, convenient Metro access, and a thriving cultural scene that perfectly balances historic charm with modern amenities.</p>
+    <div class="neighborhood-gallery">
+      <div class="neighborhood-gallery__container" id="neighborhoodGallery">
+        <div class="neighborhood-gallery__slide active"><img src="photos/hood-01.jpg" alt="Shaw Metro Station"></div>
+        <div class="neighborhood-gallery__slide"><img src="photos/hood-02.jpg" alt="Shaw Dining Scene"></div>
+        <div class="neighborhood-gallery__slide"><img src="photos/hood-03.jpg" alt="Shaw Street Art"></div>
+        <div class="neighborhood-gallery__slide"><img src="photos/hood-04.jpg" alt="Shaw Neighborhood"></div>
+        <div class="neighborhood-gallery__slide"><img src="photos/hood-05.jpg" alt="Seylou Bakery"></div>
+        <div class="neighborhood-gallery__slide"><img src="photos/hood-06.jpg" alt="Shaw Community"></div>
+        <div class="neighborhood-gallery__slide"><img src="photos/hood-07.jpg" alt="Death & Co Shaw"></div>
+        <div class="neighborhood-gallery__slide"><img src="photos/hood-08.jpg" alt="Shaw Street Murals"></div>
+        <div class="neighborhood-gallery__slide"><img src="photos/hood-09.jpg" alt="All Purpose Pizza"></div>
+        <button class="neighborhood-gallery__btn neighborhood-gallery__btn--prev" aria-label="Previous neighborhood photo">
+          <svg viewBox="0 0 24 24"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/></svg>
+        </button>
+        <button class="neighborhood-gallery__btn neighborhood-gallery__btn--next" aria-label="Next neighborhood photo">
+          <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+        </button>
+        <div class="neighborhood-gallery__count"><span id="hoodIdx">1</span> / <span id="hoodTot">9</span></div>
+      </div>
+    </div>
+    <div class="video-embed">
+      <div class="video-embed__container">
+        <div style="padding:56.25% 0 0 0;position:relative;">
+          <iframe src="https://player.vimeo.com/video/268613186?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Shaw Neighborhood"></iframe>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -326,29 +402,34 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
           <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.17L4 17.17V4h16v12zM7 9h2v2H7zm4 0h2v2h-2zm4 0h2v2h-2z"/></svg>
           Text
         </a>
-        <a href="/cdn-cgi/l/email-protection#650300170b040b010a25080011170a0b040b010a4b060a085a1610070f000611582c0b14100c171c4056244057555c54514057552b40575536114057552b324057264057553204160d0c0b02110a0b405755212640575557555555544057554052264057552a03030c0600405755201d060910160c130043070a011c582d0009090a4057552300170b040b010a4057264055244055242c405752084057550c0b11001700161100014057550c0b405755090004170b0c0b02405755080a170040575504070a1011405755110d004057550a03030c0600405755001d060910160c1300405755090c16110c0b0240575504114057555c54514057552b40575536114057552b324057264057553204160d0c0b02110a0b405755212640575557555555544b405524405524350900041600405755060a0b11040611405755080040575504114057551c0a1017405755000417090c001611405755060a0b13000b0c000b06004b405524405524310d040b0e4057551c0a104b" class="contact__action">
+        <a href="mailto:fernando@metronando.com?subject=Inquiry%3A%20914%20N%20St%20NW%2C%20Washington%20DC%2020001%20%7C%20Office%20Exclusive&body=Hello%20Fernando%2C%0A%0AI%27m%20interested%20in%20learning%20more%20about%20the%20office%20exclusive%20listing%20at%20914%20N%20St%20NW%2C%20Washington%20DC%2020001.%0A%0APlease%20contact%20me%20at%20your%20earliest%20convenience.%0A%0AThank%20you." class="contact__action">
           <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
           Email
         </a>
       </div>
+      <button class="share__btn" id="shareBtn">
+        <svg viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.50-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92S19.61 16.08 18 16.08z"/></svg>
+        Share This Listing
+      </button>
       <div class="offmarket">
         <div class="offmarket__title">Looking for More Off-Market Opportunities?</div>
-        <p class="offmarket__text">RLAH @properties maintains the largest off-market property database in the DMV. Whether you're looking to access listings before they hit the public market, or you're interested in marketing your own property with this level of privacy and exclusivity, we can help.</p>
-        <a href="/cdn-cgi/l/email-protection#9ff9faedf1fef1fbf0dff2faebedf0f1fef1fbf0b1fcf0f2a0eceafdf5fafceba2d0f9f9b2d2feedf4faebbaadafd6f1eeeaf6ede6baadafbaa8dcbaadafcdd3ded7baadafbaabafefedf0effaedebf6faecb9fdf0fbe6a2d7faf3f3f0baadafd9faedf1fef1fbf0baaddcbaafdebaafded6baada8f2baadaff6f1ebfaedfaecebfafbbaadaff6f1baadaff3fafeedf1f6f1f8baadaff2f0edfabaadaffefdf0eaebbaadaff0f9f9b2f2feedf4faebbaadaff0efeff0edebeaf1f6ebf6faecbaadafe8f6ebf7baadafcdd3ded7baadafbaabafefedf0effaedebf6faecb1baafdebaafdecbf7fef1f4baadafe6f0eab1" class="offmarket__btn">Learn More</a>
+        <p class="offmarket__text">RLAH @properties maintains the largest off-market property database in the DMV. Whether you're looking to access listings before they hit the public market, or you're interested in marketing your own property with this level of privacy and exclusivity, reach out through the contact information above.</p>
       </div>
     </div>
   </div>
 </div>
 
 <footer class="footer">
-  <div class="footer__logo"><img src="assets/logo-white.png" alt="RLAH @properties"></div>
-  <p class="footer__text">This is an office exclusive listing marketed by RLAH @properties at the direction of the seller. This property is not currently syndicated on public real estate platforms and is being marketed directly by the listing brokerage. All information deemed reliable but not guaranteed. Contact the listing agent for complete details.<br><br>Each office is independently owned and operated. RLAH @properties and its trademarks are the registered and unregistered trademarks of RLAH @properties.</p>
+  <div class="footer__logo"><a href="https://www.atproperties.com/dc/"><img src="assets/logo-white.png" alt="RLAH @properties"></a></div>
+  <p class="footer__text">The Washington Area's #1 Boutique Brokerage.<br><br>This is an office exclusive listing marketed by RLAH @properties at the direction of the seller. This property is not currently syndicated on public real estate platforms and is being marketed directly by the listing brokerage. All information deemed reliable but not guaranteed. Contact the listing agent for complete details.<br><br>Each office is independently owned and operated. RLAH @properties and its trademarks are the registered and unregistered trademarks of RLAH @properties.</p>
   <div class="footer__badge">
-    <img src="assets/equal-housing.png" alt="Equal Housing Opportunity" style="height:48px;width:auto;margin:0 auto;display:block;opacity:0.8;">
+    <img src="assets/equal-housing.png" alt="Equal Housing Opportunity">
   </div>
 </footer>
 
+<script src="https://player.vimeo.com/api/player.js"></script>
 <script>
+// Main property gallery
 (function(){
   var current = 0;
   var slides = document.querySelectorAll('.gallery__slide');
@@ -365,19 +446,16 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     if (idxEl) idxEl.textContent = current + 1;
   }
 
-  // Arrow buttons
   var prevBtn = document.querySelector('.gallery__btn--prev');
   var nextBtn = document.querySelector('.gallery__btn--next');
   if (prevBtn) prevBtn.addEventListener('click', function(){ goTo(current - 1); });
   if (nextBtn) nextBtn.addEventListener('click', function(){ goTo(current + 1); });
 
-  // Keyboard arrows
   document.addEventListener('keydown', function(e) {
     if (e.key === 'ArrowLeft') goTo(current - 1);
     if (e.key === 'ArrowRight') goTo(current + 1);
   });
 
-  // Touch swipe
   var touchStartX = 0;
   var galleryEl = document.getElementById('gallery');
   if (galleryEl) {
@@ -389,6 +467,44 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
       var diff = touchStartX - e.changedTouches[0].screenX;
       if (Math.abs(diff) > 50) {
         goTo(current + (diff > 0 ? 1 : -1));
+      }
+    }, { passive: true });
+  }
+})();
+
+// Neighborhood gallery
+(function(){
+  var hoodCurrent = 0;
+  var hoodSlides = document.querySelectorAll('.neighborhood-gallery__slide');
+  var hoodTotal = hoodSlides.length;
+  var hoodIdxEl = document.getElementById('hoodIdx');
+  var hoodTotEl = document.getElementById('hoodTot');
+  
+  if (hoodTotEl) hoodTotEl.textContent = hoodTotal;
+
+  function hoodGoTo(i) {
+    if (hoodSlides[hoodCurrent]) hoodSlides[hoodCurrent].classList.remove('active');
+    hoodCurrent = ((i % hoodTotal) + hoodTotal) % hoodTotal;
+    if (hoodSlides[hoodCurrent]) hoodSlides[hoodCurrent].classList.add('active');
+    if (hoodIdxEl) hoodIdxEl.textContent = hoodCurrent + 1;
+  }
+
+  var hoodPrevBtn = document.querySelector('.neighborhood-gallery__btn--prev');
+  var hoodNextBtn = document.querySelector('.neighborhood-gallery__btn--next');
+  if (hoodPrevBtn) hoodPrevBtn.addEventListener('click', function(){ hoodGoTo(hoodCurrent - 1); });
+  if (hoodNextBtn) hoodNextBtn.addEventListener('click', function(){ hoodGoTo(hoodCurrent + 1); });
+
+  var hoodTouchStartX = 0;
+  var hoodGalleryEl = document.getElementById('neighborhoodGallery');
+  if (hoodGalleryEl) {
+    hoodGalleryEl.addEventListener('touchstart', function(e){ 
+      hoodTouchStartX = e.changedTouches[0].screenX; 
+    }, { passive: true });
+    
+    hoodGalleryEl.addEventListener('touchend', function(e){
+      var diff = hoodTouchStartX - e.changedTouches[0].screenX;
+      if (Math.abs(diff) > 50) {
+        hoodGoTo(hoodCurrent + (diff > 0 ? 1 : -1));
       }
     }, { passive: true });
   }
@@ -408,7 +524,28 @@ if (descToggle) {
     }
   });
 }
-</script>
 
+// Share button
+var shareBtn = document.getElementById('shareBtn');
+if (shareBtn) {
+  shareBtn.addEventListener('click', function(){
+    if (navigator.share) {
+      navigator.share({
+        title: '914 N St NW | RLAH @properties Office Exclusive',
+        text: '2 Beds | 2 Baths | 1 Half Bath | 1,908 Sq Ft — Office Exclusive in Shaw',
+        url: window.location.href
+      });
+    } else if (navigator.clipboard) {
+      navigator.clipboard.writeText(window.location.href).then(function() {
+        var originalText = shareBtn.innerHTML;
+        shareBtn.innerHTML = '<svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.5a.984.984 0 010-1.4.984.984 0 011.4 0L9 13.4l6.1-6.1a.984.984 0 011.4 1.4L9 16.2z"/></svg>Link Copied!';
+        setTimeout(function() {
+          shareBtn.innerHTML = originalText;
+        }, 2000);
+      });
+    }
+  });
+}
+</script>
 </body>
 </html>
