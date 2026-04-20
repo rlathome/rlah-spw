@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>914 N St NW, Washington, DC 20001 | RLAH @properties Office Exclusive</title>
+<meta name="description" content="Office Exclusive — 914 N St NW, Washington, DC 20001. 2 Beds, 2 Baths, 1 Half Bath, 1,392 Sq Ft. Contact agent for details.">
+<meta property="og:title" content="914 N St NW | RLAH @properties Office Exclusive">
+<meta property="og:description" content="2 Beds | 2 Baths | 1 Half Bath | 1,392 Sq Ft — Office Exclusive in Shaw. Contact agent for details.">
+<meta property="og:image" content="photos/01.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23c21c0d'/%3E%3Ctext x='32' y='42' font-family='Arial,Helvetica,sans-serif' font-size='18' font-weight='bold' fill='white' text-anchor='middle' letter-spacing='1'%3ERLAH%3C/text%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="assets/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --black: #222222;
+  --dark: #333333;
+  --gray-dark: #555555;
+  --gray: #888888;
+  --gray-light: #bbbbbb;
+  --border: #e5e5e5;
+  --bg-alt: #f7f7f5;
+  --bg-light: #f8f8f8;
+  --white: #ffffff;
+  --red: #c21c0d;
+  --font: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --max-width: 1100px;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+body { font-family: var(--font); color: var(--dark); background: var(--white); line-height: 1.6; font-size: 15px; }
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+button { cursor: pointer; border: none; background: none; font-family: inherit; }
+
+.header { position: sticky; top: 0; z-index: 100; background: var(--white); border-bottom: 1px solid var(--border); height: 64px; display: flex; align-items: center; justify-content: space-between; padding: 0 40px; }
+.header__logo img { height: 24px; width: auto; }
+.header__phone { font-size: 13px; font-weight: 500; color: var(--dark); letter-spacing: 0.3px; }
+
+.exclusive-ribbon { background: var(--black); color: #cccccc; text-align: center; padding: 8px 20px; font-size: 11px; font-weight: 500; letter-spacing: 2px; text-transform: uppercase; }
+
+.gallery { position: relative; width: 100%; aspect-ratio: 3/2; max-height: 72vh; background: #111; overflow: hidden; }
+.gallery__slide { position: absolute; inset: 0; opacity: 0; transition: opacity 0.45s ease; pointer-events: none; }
+.gallery__slide.active { opacity: 1; pointer-events: auto; }
+.gallery__slide img { width: 100%; height: 100%; object-fit: cover; }
+.gallery__btn { position: absolute; top: 50%; transform: translateY(-50%); width: 48px; height: 48px; background: rgba(255,255,255,0.9); border-radius: 50%; display: flex; align-items: center; justify-content: center; z-index: 2; transition: background 0.15s, transform 0.15s; }
+.gallery__btn:hover { background: #fff; transform: translateY(-50%) scale(1.05); }
+.gallery__btn--prev { left: 20px; }
+.gallery__btn--next { right: 20px; }
+.gallery__btn svg { width: 18px; height: 18px; fill: var(--dark); }
+.gallery__count { position: absolute; bottom: 16px; right: 20px; background: rgba(0,0,0,0.55); color: #fff; padding: 5px 14px; border-radius: 3px; font-size: 12px; font-weight: 500; z-index: 2; }
+
+.price-bar { border-bottom: 1px solid var(--border); padding: 24px 40px; background: var(--white); }
+.price-bar__inner { max-width: var(--max-width); margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px; }
+.price-bar__price { font-family: var(--font-display); font-size: 34px; font-weight: 600; color: var(--black); letter-spacing: -1.5px; }
+.price-bar__stats { display: flex; gap: 28px; align-items: center; }
+.price-bar__stat { text-align: center; }
+.price-bar__stat-num { font-size: 22px; font-weight: 700; color: var(--black); line-height: 1.2; }
+.price-bar__stat-label { font-size: 11px; font-weight: 500; color: var(--gray); text-transform: lowercase; letter-spacing: 0.3px; }
+.price-bar__cta { display: inline-flex; align-items: center; gap: 8px; background: var(--black); color: var(--white); padding: 11px 24px; font-size: 13px; font-weight: 600; letter-spacing: 0.3px; transition: background 0.15s; }
+.price-bar__cta:hover { background: #444; }
+.price-bar__cta svg { width: 14px; height: 14px; fill: currentColor; }
+
+.section-nav { max-width: var(--max-width); margin: 0 auto; padding: 16px 40px 0; display: flex; align-items: center; gap: 0; flex-wrap: wrap; border-bottom: 1px solid var(--border); background: var(--white); }
+.section-nav a { font-size: 13px; font-weight: 500; color: var(--gray); padding: 8px 0 12px; transition: color 0.15s; }
+.section-nav a:hover { color: var(--black); }
+.section-nav__sep { width: 1px; height: 12px; background: var(--border); margin: 0 16px; flex-shrink: 0; }
+
+.section--white { background: var(--white); }
+.section--alt { background: var(--bg-alt); }
+.section__inner { max-width: var(--max-width); margin: 0 auto; padding: 32px 40px; }
+
+.listing-head__address { font-family: var(--font-display); font-size: 28px; font-weight: 600; color: var(--black); line-height: 1.3; letter-spacing: -1px; }
+.listing-head__meta { margin-top: 8px; font-size: 14px; color: var(--gray); display: flex; align-items: center; flex-wrap: wrap; gap: 6px; }
+.listing-head__dot { width: 3px; height: 3px; border-radius: 50%; background: var(--gray-light); flex-shrink: 0; }
+
+.quick-facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border: 1px solid var(--border); border-radius: 4px; overflow: hidden; margin-top: 24px; }
+.quick-fact { padding: 14px 18px; border-bottom: 1px solid var(--border); border-right: 1px solid var(--border); background: var(--white); }
+.quick-fact__label { font-size: 11px; font-weight: 500; color: var(--gray); text-transform: uppercase; letter-spacing: 0.5px; }
+.quick-fact__value { font-size: 15px; font-weight: 600; color: var(--black); margin-top: 2px; }
+
+.description__text { font-size: 15px; line-height: 1.8; color: var(--gray-dark); max-width: 760px; }
+.description__toggle { display: none; margin-top: 8px; font-size: 14px; font-weight: 600; color: var(--black); cursor: pointer; background: none; border: none; padding: 0; font-family: var(--font); }
+.description__toggle:hover { text-decoration: underline; }
+
+.features__title { font-size: 16px; font-weight: 700; color: var(--black); margin-bottom: 20px; letter-spacing: -0.2px; }
+.features__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 40px; }
+.features__row { display: flex; justify-content: space-between; align-items: baseline; padding: 9px 0; border-bottom: 1px solid #eee; }
+.features__label { font-size: 13px; font-weight: 500; color: var(--gray); }
+.features__value { font-size: 14px; font-weight: 500; color: var(--dark); text-align: right; max-width: 55%; }
+
+.map-section__title { font-size: 16px; font-weight: 700; color: var(--black); margin-bottom: 16px; }
+.map-wrap { width: 100%; height: 380px; border: 1px solid var(--border); overflow: hidden; }
+.map-wrap iframe { width: 100%; height: 100%; border: 0; }
+
+.contact__inner { max-width: 560px; margin: 0 auto; text-align: center; }
+.contact__title { font-size: 22px; font-weight: 700; color: var(--black); margin-bottom: 6px; }
+.contact__subtitle { font-size: 14px; color: var(--gray-dark); margin-bottom: 28px; line-height: 1.7; }
+.contact__card { display: flex; align-items: center; gap: 16px; background: var(--white); border: 1px solid var(--border); padding: 20px; text-align: left; margin-bottom: 16px; }
+.contact__photo { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; background: #ddd; flex-shrink: 0; }
+.contact__name { font-size: 17px; font-weight: 600; color: var(--black); }
+.contact__role { font-size: 13px; color: var(--gray); margin-top: 1px; }
+.contact__phone-num { font-size: 14px; font-weight: 600; color: var(--dark); margin-top: 4px; }
+
+.contact__actions { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-bottom: 20px; }
+.contact__action { display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 12px 8px; font-size: 13px; font-weight: 600; border: 1px solid var(--border); color: var(--dark); background: var(--white); transition: background 0.15s, border-color 0.15s; }
+.contact__action:hover { background: var(--bg-alt); border-color: var(--gray-light); }
+.contact__action svg { width: 15px; height: 15px; fill: currentColor; }
+
+.offmarket { max-width: 560px; margin: 0 auto; text-align: center; border-top: 1px solid var(--border); padding-top: 28px; margin-top: 8px; }
+.offmarket__title { font-size: 16px; font-weight: 700; color: var(--black); margin-bottom: 8px; }
+.offmarket__text { font-size: 14px; color: var(--gray-dark); line-height: 1.7; margin-bottom: 16px; }
+.offmarket__btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: var(--white); color: var(--black); border: 2px solid var(--black); padding: 12px 28px; font-size: 13px; font-weight: 600; letter-spacing: 0.3px; transition: background 0.15s, color 0.15s; }
+.offmarket__btn:hover { background: var(--black); color: var(--white); }
+
+.footer { background: var(--black); padding: 36px 40px; text-align: center; }
+.footer__logo img { height: 22px; margin: 0 auto 16px; }
+.footer__text { font-size: 11px; color: #999; max-width: 640px; margin: 0 auto; line-height: 1.7; }
+.footer__badge { margin-top: 20px; }
+.footer__badge svg { height: 36px; width: auto; margin: 0 auto; display: block; }
+
+@media (max-width: 768px) {
+  .header { padding: 0 20px; }
+  .section__inner { padding: 24px 20px; }
+  .section-nav { padding: 12px 20px 0; }
+  .section-nav__sep { margin: 0 10px; }
+  .section-nav a { font-size: 12px; }
+  .price-bar { padding: 20px; }
+  .price-bar__inner { flex-direction: column; align-items: flex-start; }
+  .price-bar__cta { width: 100%; justify-content: center; }
+  .gallery { aspect-ratio: 4/3; max-height: 50vh; }
+  .features__grid { grid-template-columns: 1fr; gap: 0; }
+  .map-wrap { height: 260px; }
+  .contact__card { flex-direction: column; text-align: center; }
+  .contact__actions { grid-template-columns: 1fr; }
+  .quick-facts { grid-template-columns: 1fr 1fr; }
+  .footer { padding: 28px 20px; }
+  .description__text.collapsible { max-height: 120px; overflow: hidden; position: relative; }
+  .description__text.collapsible::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 50px; background: linear-gradient(transparent, var(--bg-alt)); pointer-events: none; }
+  .description__text.collapsible.expanded { max-height: none; }
+  .description__text.collapsible.expanded::after { display: none; }
+  .description__toggle { display: inline-block; }
+}
+@media (max-width: 480px) {
+  .quick-facts { grid-template-columns: 1fr; }
+  .price-bar__stats { gap: 16px; flex-wrap: wrap; }
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <a href="https://www.atproperties.com/dc/" class="header__logo">
+    <img src="assets/logo.jpg" alt="RLAH @properties">
+  </a>
+  <a href="tel:2025188781" class="header__phone">202.518.8781</a>
+</header>
+
+<div class="exclusive-ribbon">Office Exclusive &mdash; Contact Agent for Details</div>
+
+<div class="gallery" id="gallery">
+  <div class="gallery__slide active"><img src="photos/01.jpg" alt="914 N St NW Photo 1"></div>
+  <div class="gallery__slide"><img src="photos/02.jpg" alt="914 N St NW Photo 2"></div>
+  <div class="gallery__slide"><img src="photos/03.jpg" alt="914 N St NW Photo 3"></div>
+  <button class="gallery__btn gallery__btn--prev" aria-label="Previous photo">
+    <svg viewBox="0 0 24 24"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/></svg>
+  </button>
+  <button class="gallery__btn gallery__btn--next" aria-label="Next photo">
+    <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+  </button>
+  <div class="gallery__count"><span id="idx">1</span> / <span id="tot">3</span></div>
+</div>
+
+<div class="price-bar">
+  <div class="price-bar__inner">
+    <div class="price-bar__price">$999,999</div>
+    <div class="price-bar__stats">
+      <div class="price-bar__stat"><div class="price-bar__stat-num">2</div><div class="price-bar__stat-label">beds</div></div>
+      <div class="price-bar__stat"><div class="price-bar__stat-num">2</div><div class="price-bar__stat-label">baths</div></div>
+      <div class="price-bar__stat"><div class="price-bar__stat-num">1</div><div class="price-bar__stat-label">half bath</div></div>
+      <div class="price-bar__stat"><div class="price-bar__stat-num">1,392</div><div class="price-bar__stat-label">square ft</div></div>
+    </div>
+    <a href="#contact" class="price-bar__cta">
+      <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      Contact Agent
+    </a>
+  </div>
+</div>
+
+<nav class="section-nav">
+  <a href="#overview">Overview</a><span class="section-nav__sep"></span>
+  <a href="#features">Full Features</a><span class="section-nav__sep"></span>
+  <a href="#taxes">Taxes</a><span class="section-nav__sep"></span>
+  <a href="#location">Location</a><span class="section-nav__sep"></span>
+  <a href="#schools">Schools</a><span class="section-nav__sep"></span>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="section--white" id="overview">
+  <div class="section__inner">
+    <h1 class="listing-head__address">914 N St NW<br>Washington, District Of Columbia 20001</h1>
+    <div class="listing-head__meta">
+      <span>Office Exclusive</span><span class="listing-head__dot"></span>
+      <span>Interior Row/Townhouse</span><span class="listing-head__dot"></span>
+      <span>Shaw</span>
+    </div>
+    <div class="quick-facts">
+      <div class="quick-fact"><div class="quick-fact__label">Property Type</div><div class="quick-fact__value">Interior Row/Townhouse</div></div>
+      <div class="quick-fact"><div class="quick-fact__label">Year Built</div><div class="quick-fact__value">1880</div></div>
+      <div class="quick-fact"><div class="quick-fact__label">Year Renovated</div><div class="quick-fact__value">2017</div></div>
+      <div class="quick-fact"><div class="quick-fact__label">Lot Size</div><div class="quick-fact__value">931 Sq Ft</div></div>
+      <div class="quick-fact"><div class="quick-fact__label">Ownership</div><div class="quick-fact__value">Fee Simple</div></div>
+      <div class="quick-fact"><div class="quick-fact__label">Levels</div><div class="quick-fact__value">3</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="section--alt">
+  <div class="section__inner">
+    <p class="description__text collapsible" id="descText">There is no property description provided at this time. Please contact the listing agent for more details not included in this listing detail page.</p>
+    <button class="description__toggle" id="descToggle">Continue Reading</button>
+  </div>
+</div>
+
+<div class="section--white" id="features">
+  <div class="section__inner">
+    <h2 class="features__title">Full Features</h2>
+    <div class="features__grid">
+      <div class="features__row"><span class="features__label">Architecture Style</span><span class="features__value">Traditional</span></div>
+      <div class="features__row"><span class="features__label">Construction</span><span class="features__value">Brick</span></div>
+      <div class="features__row"><span class="features__label">Structure Type</span><span class="features__value">Interior Row/Townhouse</span></div>
+      <div class="features__row"><span class="features__label">Year Built</span><span class="features__value">1880</span></div>
+      <div class="features__row"><span class="features__label">Year Renovated</span><span class="features__value">2017</span></div>
+      <div class="features__row"><span class="features__label">Levels</span><span class="features__value">3</span></div>
+      <div class="features__row"><span class="features__label">Square Feet</span><span class="features__value">1,392</span></div>
+      <div class="features__row"><span class="features__label">Lot Size</span><span class="features__value">931 Sq Ft</span></div>
+      <div class="features__row"><span class="features__label">Beds</span><span class="features__value">2</span></div>
+      <div class="features__row"><span class="features__label">Baths</span><span class="features__value">2 Full / 1 Half</span></div>
+      <div class="features__row"><span class="features__label">Cooling</span><span class="features__value">Central A/C</span></div>
+      <div class="features__row"><span class="features__label">Heating</span><span class="features__value">90% Forced Air</span></div>
+      <div class="features__row"><span class="features__label">Heating Fuel</span><span class="features__value">Natural Gas</span></div>
+      <div class="features__row"><span class="features__label">Hot Water</span><span class="features__value">Natural Gas</span></div>
+      <div class="features__row"><span class="features__label">Fireplace</span><span class="features__value">Yes (1 — Wood)</span></div>
+      <div class="features__row"><span class="features__label">Pool</span><span class="features__value">No</span></div>
+      <div class="features__row"><span class="features__label">Basement</span><span class="features__value">Fully Finished, Front Entrance, English</span></div>
+      <div class="features__row"><span class="features__label">Flooring</span><span class="features__value">Hardwood</span></div>
+      <div class="features__row"><span class="features__label">Water Source</span><span class="features__value">Public</span></div>
+      <div class="features__row"><span class="features__label">Sewer</span><span class="features__value">Public Sewer</span></div>
+      <div class="features__row"><span class="features__label">Parking</span><span class="features__value">None</span></div>
+      <div class="features__row"><span class="features__label">Condition</span><span class="features__value">Good</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="section--alt">
+  <div class="section__inner">
+    <h2 class="features__title">Interior Features</h2>
+    <div class="features__grid">
+      <div class="features__row"><span class="features__label">Interior</span><span class="features__value">2nd Kitchen, Soaking Tub, Walk-In Shower, Ceiling Fan(s), Galley Kitchen, Skylight(s), Window Treatments, Wood Floors</span></div>
+      <div class="features__row"><span class="features__label">Appliances</span><span class="features__value">Dishwasher, Disposal, Electric Dryer, Exhaust Fan, Microwave, Gas Range, Washer, Stacked W/D</span></div>
+      <div class="features__row"><span class="features__label">Laundry</span><span class="features__value">Basement, Main Floor</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="section--white" id="taxes">
+  <div class="section__inner">
+    <h2 class="features__title">Taxes &amp; Assessments</h2>
+    <div class="features__grid">
+      <div class="features__row"><span class="features__label">Tax Annual Amount</span><span class="features__value">$6,731</span></div>
+      <div class="features__row"><span class="features__label">Tax Year</span><span class="features__value">2025</span></div>
+      <div class="features__row"><span class="features__label">Tax Assessed Value</span><span class="features__value">$885,170</span></div>
+      <div class="features__row"><span class="features__label">Land Value</span><span class="features__value">$524,290</span></div>
+      <div class="features__row"><span class="features__label">Improvement Value</span><span class="features__value">$360,880</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="section--alt" id="location">
+  <div class="section__inner">
+    <h2 class="map-section__title">Location</h2>
+    <div class="features__grid" style="margin-bottom:20px">
+      <div class="features__row"><span class="features__label">Neighborhood</span><span class="features__value">Shaw</span></div>
+      <div class="features__row"><span class="features__label">Zip Code</span><span class="features__value">20001</span></div>
+      <div class="features__row"><span class="features__label">City</span><span class="features__value">Washington</span></div>
+      <div class="features__row"><span class="features__label">County</span><span class="features__value">Washington</span></div>
+    </div>
+    <div class="map-wrap">
+      <iframe src="https://maps.google.com/maps?q=914+N+St+NW,+Washington,+DC+20001&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="914 N St NW on map"></iframe>
+    </div>
+  </div>
+</div>
+
+<div class="section--white" id="schools">
+  <div class="section__inner">
+    <h2 class="features__title">Schools</h2>
+    <div class="features__grid">
+      <div class="features__row"><span class="features__label">School District</span><span class="features__value">District of Columbia Public Schools</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="section--alt" id="contact">
+  <div class="section__inner">
+    <div class="contact__inner">
+      <h2 class="contact__title">Interested in This Property?</h2>
+      <p class="contact__subtitle">This is an office exclusive listing at the direction of the seller, who has requested that the marketing of this property not be publicly displayed across all real estate portals at this time. Contact the listing agent directly for showing details, pricing, and additional information.</p>
+      <div class="contact__card">
+        <img class="contact__photo" src="photos/agent.jpg" alt="Fernando Garcia">
+        <div>
+          <div class="contact__name">Fernando Garcia</div>
+          <div class="contact__role">RLAH @properties</div>
+          <div class="contact__phone-num">(202) 907-8907</div>
+        </div>
+      </div>
+      <div class="contact__actions">
+        <a href="tel:2029078907" class="contact__action">
+          <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1.003 1.003 0 011.01-.24c1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.1.31.03.66-.25 1.02l-2.2 2.2z"/></svg>
+          Call
+        </a>
+        <a href="sms:2029078907?body=Hi%20Fernando%2C%20I%27m%20interested%20in%20the%20office%20exclusive%20at%20914%20N%20St%20NW.%20Could%20you%20share%20more%20details%3F" class="contact__action">
+          <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.17L4 17.17V4h16v12zM7 9h2v2H7zm4 0h2v2h-2zm4 0h2v2h-2z"/></svg>
+          Text
+        </a>
+        <a href="/cdn-cgi/l/email-protection#650300170b040b010a25080011170a0b040b010a4b060a085a1610070f000611582c0b14100c171c4056244057555c54514057552b40575536114057552b324057264057553204160d0c0b02110a0b405755212640575557555555544057554052264057552a03030c0600405755201d060910160c130043070a011c582d0009090a4057552300170b040b010a4057264055244055242c405752084057550c0b11001700161100014057550c0b405755090004170b0c0b02405755080a170040575504070a1011405755110d004057550a03030c0600405755001d060910160c1300405755090c16110c0b0240575504114057555c54514057552b40575536114057552b324057264057553204160d0c0b02110a0b405755212640575557555555544b405524405524350900041600405755060a0b11040611405755080040575504114057551c0a1017405755000417090c001611405755060a0b13000b0c000b06004b405524405524310d040b0e4057551c0a104b" class="contact__action">
+          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          Email
+        </a>
+      </div>
+      <div class="offmarket">
+        <div class="offmarket__title">Looking for More Off-Market Opportunities?</div>
+        <p class="offmarket__text">RLAH @properties maintains the largest off-market property database in the DMV. Whether you're looking to access listings before they hit the public market, or you're interested in marketing your own property with this level of privacy and exclusivity, we can help.</p>
+        <a href="/cdn-cgi/l/email-protection#9ff9faedf1fef1fbf0dff2faebedf0f1fef1fbf0b1fcf0f2a0eceafdf5fafceba2d0f9f9b2d2feedf4faebbaadafd6f1eeeaf6ede6baadafbaa8dcbaadafcdd3ded7baadafbaabafefedf0effaedebf6faecb9fdf0fbe6a2d7faf3f3f0baadafd9faedf1fef1fbf0baaddcbaafdebaafded6baada8f2baadaff6f1ebfaedfaecebfafbbaadaff6f1baadaff3fafeedf1f6f1f8baadaff2f0edfabaadaffefdf0eaebbaadaff0f9f9b2f2feedf4faebbaadaff0efeff0edebeaf1f6ebf6faecbaadafe8f6ebf7baadafcdd3ded7baadafbaabafefedf0effaedebf6faecb1baafdebaafdecbf7fef1f4baadafe6f0eab1" class="offmarket__btn">Learn More</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer__logo"><img src="assets/logo-white.png" alt="RLAH @properties"></div>
+  <p class="footer__text">This is an office exclusive listing marketed by RLAH @properties at the direction of the seller. This property is not currently syndicated on public real estate platforms and is being marketed directly by the listing brokerage. All information deemed reliable but not guaranteed. Contact the listing agent for complete details.<br><br>Each office is independently owned and operated. RLAH @properties and its trademarks are the registered and unregistered trademarks of RLAH @properties.</p>
+  <div class="footer__badge">
+    <img src="assets/equal-housing.png" alt="Equal Housing Opportunity" style="height:48px;width:auto;margin:0 auto;display:block;opacity:0.8;">
+  </div>
+</footer>
+
+<script>
+(function(){
+  var current = 0;
+  var slides = document.querySelectorAll('.gallery__slide');
+  var total = slides.length;
+  var idxEl = document.getElementById('idx');
+  var totEl = document.getElementById('tot');
+  
+  if (totEl) totEl.textContent = total;
+
+  function goTo(i) {
+    if (slides[current]) slides[current].classList.remove('active');
+    current = ((i % total) + total) % total;
+    if (slides[current]) slides[current].classList.add('active');
+    if (idxEl) idxEl.textContent = current + 1;
+  }
+
+  // Arrow buttons
+  var prevBtn = document.querySelector('.gallery__btn--prev');
+  var nextBtn = document.querySelector('.gallery__btn--next');
+  if (prevBtn) prevBtn.addEventListener('click', function(){ goTo(current - 1); });
+  if (nextBtn) nextBtn.addEventListener('click', function(){ goTo(current + 1); });
+
+  // Keyboard arrows
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'ArrowLeft') goTo(current - 1);
+    if (e.key === 'ArrowRight') goTo(current + 1);
+  });
+
+  // Touch swipe
+  var touchStartX = 0;
+  var galleryEl = document.getElementById('gallery');
+  if (galleryEl) {
+    galleryEl.addEventListener('touchstart', function(e){ 
+      touchStartX = e.changedTouches[0].screenX; 
+    }, { passive: true });
+    
+    galleryEl.addEventListener('touchend', function(e){
+      var diff = touchStartX - e.changedTouches[0].screenX;
+      if (Math.abs(diff) > 50) {
+        goTo(current + (diff > 0 ? 1 : -1));
+      }
+    }, { passive: true });
+  }
+})();
+
+// Description toggle
+var descToggle = document.getElementById('descToggle');
+if (descToggle) {
+  descToggle.addEventListener('click', function(){
+    var text = document.getElementById('descText');
+    if (text && text.classList.contains('expanded')) {
+      text.classList.remove('expanded');
+      this.textContent = 'Continue Reading';
+    } else if (text) {
+      text.classList.add('expanded');
+      this.textContent = 'Show Less';
+    }
+  });
+}
+</script>
+
+</body>
+</html>
