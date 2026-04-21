@@ -105,6 +105,14 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .map-wrap { width: 100%; height: 380px; border: 1px solid var(--border); overflow: hidden; }
 .map-wrap iframe { width: 100%; height: 100%; border: 0; }
 
+.nbhd__title { font-family: var(--font-display); font-size: 26px; font-weight: 600; color: var(--black); letter-spacing: -0.5px; text-align: center; margin-bottom: 8px; }
+.nbhd__eyebrow { font-size: 11px; font-weight: 600; color: var(--gray); letter-spacing: 2px; text-transform: uppercase; text-align: center; margin-bottom: 6px; }
+.nbhd__body { max-width: 760px; margin: 0 auto 28px; font-size: 15px; line-height: 1.8; color: var(--gray-dark); }
+.nbhd__body p { margin-bottom: 14px; }
+.nbhd__body p:last-child { margin-bottom: 0; }
+.video-wrap { position: relative; width: 100%; max-width: 800px; margin: 0 auto; aspect-ratio: 16/9; border: 1px solid var(--border); border-radius: 4px; overflow: hidden; }
+.video-wrap iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
 .contact__inner { max-width: 560px; margin: 0 auto; text-align: center; }
 .contact__title { font-size: 22px; font-weight: 700; color: var(--black); margin-bottom: 6px; }
 .contact__subtitle { font-size: 14px; color: var(--gray-dark); margin-bottom: 28px; line-height: 1.7; }
@@ -238,6 +246,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   <a href="#features">Full Features</a><span class="section-nav__sep"></span>
   <a href="#taxes">Taxes</a><span class="section-nav__sep"></span>
   <a href="#location">Location</a><span class="section-nav__sep"></span>
+  <a href="#neighborhood">Neighborhood</a><span class="section-nav__sep"></span>
   <a href="#contact">Contact</a>
 </nav>
 
@@ -344,7 +353,24 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   </div>
 </div>
 
-<div class="section--white" id="contact">
+<div class="section--white" id="neighborhood">
+  <div class="section__inner">
+    <div class="nbhd__eyebrow">The Neighborhood</div>
+    <h2 class="nbhd__title">NoMa</h2>
+    <div class="nbhd__body">
+      <p>Discover the allure of NoMa, an up-and-coming district located north of Massachusetts Avenue NE in the nation&rsquo;s capital. From Union Station in the south to Q and R streets NE in the north, NoMa is a bustling hub for transportation, culture, and gastronomy.</p>
+      <p>At the heart of the neighborhood lies Union Market, a renovated mid-century food hall that is a must-visit destination for foodies and gourmands alike. Union Market offers a wide variety of culinary delights, from gourmet spices and meats to high-end kitchen supplies. Notable restaurants and shops include the Michelin-starred Italian eatery Masseria and the Dolcezza Gelato &amp; Coffee Factory. The area surrounding the market is also home to a thriving creative scene, with businesses such as the Angelika movie theater and National Public Radio.</p>
+      <p>NoMa&rsquo;s historical buildings have been revitalized and repurposed for contemporary uses. The Hecht&rsquo;s Warehouse, a century-old department store storage facility, has been transformed into a distillery and a vibrant dining destination. The Uline Arena, a venue that hosted the Beatles&rsquo; first U.S. concert, has been converted into a flagship REI store, among other businesses.</p>
+      <p>As the second-busiest Amtrak hub in the country, Union Station is a major transportation hub located along Massachusetts Avenue NE. In addition to being a transit hub, Union Station offers shopping, dining, and tours. Capital Bikeshare stations are also located nearby, and the Metropolitan Branch Trail offers an eight-mile scenic route to Silver Spring, MD.</p>
+      <p>With so much to see, taste, and experience, NoMa is a must-visit destination for anyone seeking a unique and unforgettable urban adventure.</p>
+    </div>
+    <div class="video-wrap">
+      <iframe src="https://player.vimeo.com/video/276264084?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="NoMa"></iframe>
+    </div>
+  </div>
+</div>
+
+<div class="section--alt" id="contact">
   <div class="section__inner">
     <div class="contact__inner">
       <h2 class="contact__title">Interested in This Property?</h2>
