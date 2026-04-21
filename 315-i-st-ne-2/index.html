@@ -4,18 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
-<title>315 I St NE #2, Washington, DC 20002 | RLAH @properties Office Exclusive</title>
-<meta name="description" content="Office Exclusive — 315 I St NE #2, Washington, DC 20002. 3 Beds, 2 Baths, 1 Half Bath, 1,699 Sq Ft in the heart of NoMa. Contact agent for details.">
+<title>315 I St NE #2, Washington, DC — RLAH @properties Office Exclusive</title>
+<meta name="description" content="Office Exclusive — 315 I St NE #2, Washington, DC 20002. 3 Beds, 2.5 Baths, 1,699 Sq Ft in the heart of NoMa. Contact agent for details.">
 <meta property="og:title" content="315 I St NE #2 | RLAH @properties Office Exclusive">
-<meta property="og:description" content="3 Beds | 2 Baths | 1 Half Bath | 1,699 Sq Ft — Office Exclusive in NoMa. Contact agent for details.">
+<meta property="og:description" content="3 Beds | 2.5 Baths | 1,699 Sq Ft — Office Exclusive in NoMa. Contact agent for details.">
 <meta property="og:image" content="photos/01.jpg">
 <meta property="og:type" content="website">
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png">
 <link rel="apple-touch-icon" href="assets/favicon-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root {
   --black: #222222;
@@ -28,336 +29,395 @@
   --bg-light: #f8f8f8;
   --white: #ffffff;
   --red: #c21c0d;
-  --font: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
-  --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
-  --max-width: 1100px;
+  --font: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --display: 'Playfair Display', Georgia, serif;
 }
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-body { font-family: var(--font); color: var(--dark); background: var(--white); line-height: 1.6; font-size: 15px; }
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--font); color: var(--dark); background: var(--white); line-height: 1.6; -webkit-font-smoothing: antialiased; }
 img { max-width: 100%; display: block; }
 a { color: inherit; text-decoration: none; }
-button { cursor: pointer; border: none; background: none; font-family: inherit; }
 
-.header { position: sticky; top: 0; z-index: 100; background: var(--white); border-bottom: 1px solid var(--border); height: 64px; display: flex; align-items: center; justify-content: space-between; padding: 0 40px; }
-.header__logo img { height: 24px; width: auto; }
-.header__phone { font-size: 13px; font-weight: 500; color: var(--dark); letter-spacing: 0.3px; }
+/* HEADER */
+.header { position: sticky; top: 0; z-index: 100; background: var(--white); border-bottom: 1px solid var(--border); }
+.header__inner { display: flex; align-items: center; justify-content: space-between; padding: 14px 28px; max-width: 1400px; margin: 0 auto; }
+.header__logo img { height: 48px; width: auto; display: block; }
+.header__tag { font-size: 11px; letter-spacing: 1.2px; color: var(--gray); text-transform: uppercase; font-weight: 500; }
 
-.exclusive-ribbon { background: var(--black); color: #cccccc; text-align: center; padding: 8px 20px; font-size: 11px; font-weight: 500; letter-spacing: 2px; text-transform: uppercase; }
+/* EXCLUSIVE RIBBON */
+.ribbon { background: var(--black); color: var(--white); text-align: center; padding: 9px 20px; font-size: 11px; letter-spacing: 1.4px; text-transform: uppercase; font-weight: 600; }
 
-.photo-gallery { position: relative; width: 100%; aspect-ratio: 3/2; max-height: 72vh; background: #111; overflow: hidden; }
-.photo-gallery .g-slide { position: absolute; inset: 0; opacity: 0; transition: opacity 0.45s ease; pointer-events: none; }
-.photo-gallery .g-slide.active { opacity: 1; pointer-events: auto; }
-.photo-gallery .g-slide img { width: 100%; height: 100%; object-fit: cover; }
-.gallery__btn { position: absolute; top: 50%; transform: translateY(-50%); width: 48px; height: 48px; background: rgba(255,255,255,0.9); border-radius: 50%; display: flex; align-items: center; justify-content: center; z-index: 2; transition: background 0.15s, transform 0.15s; }
-.gallery__btn:hover { background: #fff; transform: translateY(-50%) scale(1.05); }
-.gallery__btn--prev { left: 20px; }
-.gallery__btn--next { right: 20px; }
-.gallery__btn svg { width: 18px; height: 18px; fill: var(--dark); }
-.gallery__count { position: absolute; bottom: 16px; right: 20px; background: rgba(0,0,0,0.55); color: #fff; padding: 5px 14px; border-radius: 3px; font-size: 12px; font-weight: 500; z-index: 2; }
+/* PHOTO GALLERY */
+.photo-gallery { position: relative; background: #000; height: 72vh; max-height: 780px; min-height: 400px; overflow: hidden; }
+.g-slide { position: absolute; inset: 0; opacity: 0; transition: opacity 0.4s ease; }
+.g-slide.active { opacity: 1; }
+.g-slide img { width: 100%; height: 100%; object-fit: cover; }
+.photo-gallery__nav { position: absolute; top: 50%; transform: translateY(-50%); width: 48px; height: 48px; border-radius: 50%; background: rgba(255,255,255,0.9); border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; z-index: 5; transition: background 0.15s; }
+.photo-gallery__nav:hover { background: var(--white); }
+.photo-gallery__nav svg { width: 20px; height: 20px; fill: var(--black); }
+.photo-gallery__nav--prev { left: 24px; }
+.photo-gallery__nav--next { right: 24px; }
+.photo-gallery__counter { position: absolute; bottom: 20px; right: 24px; background: rgba(0,0,0,0.55); color: var(--white); padding: 6px 14px; font-size: 12px; letter-spacing: 0.5px; z-index: 5; border-radius: 2px; }
 
-.price-bar { border-bottom: 1px solid var(--border); padding: 24px 40px; background: var(--white); }
-.price-bar__inner { max-width: var(--max-width); margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px; }
-.price-bar__price { font-family: var(--font-display); font-size: 34px; font-weight: 600; color: var(--black); letter-spacing: -1.5px; }
-.price-bar__stats { display: flex; gap: 28px; align-items: center; }
-.price-bar__stat { text-align: center; }
-.price-bar__stat-num { font-size: 22px; font-weight: 700; color: var(--black); line-height: 1.2; }
-.price-bar__stat-label { font-size: 11px; font-weight: 500; color: var(--gray); text-transform: lowercase; letter-spacing: 0.3px; }
-.price-bar__cta { display: inline-flex; align-items: center; gap: 8px; background: var(--black); color: var(--white); padding: 11px 24px; font-size: 13px; font-weight: 600; letter-spacing: 0.3px; transition: background 0.15s; }
-.price-bar__cta:hover { background: #444; }
-.price-bar__cta svg { width: 14px; height: 14px; fill: currentColor; }
+/* PRICE BAR */
+.price-bar { padding: 38px 28px; text-align: center; background: var(--white); border-bottom: 1px solid var(--border); }
+.price-bar__address { font-family: var(--display); font-size: 34px; color: var(--black); letter-spacing: -0.8px; font-weight: 500; margin-bottom: 6px; }
+.price-bar__city { font-size: 13px; color: var(--gray); letter-spacing: 1.4px; text-transform: uppercase; margin-bottom: 22px; }
+.price-bar__price { font-family: var(--display); font-size: 26px; color: var(--black); font-weight: 500; letter-spacing: -0.5px; margin-bottom: 16px; }
+.price-bar__facts { display: flex; justify-content: center; gap: 28px; flex-wrap: wrap; font-size: 13px; color: var(--gray-dark); letter-spacing: 0.3px; }
+.price-bar__facts span { display: inline-flex; align-items: center; }
+.price-bar__facts span + span::before { content: '•'; margin-right: 28px; color: var(--gray-light); }
 
-.section-nav { max-width: var(--max-width); margin: 0 auto; padding: 16px 40px 0; display: flex; align-items: center; gap: 0; flex-wrap: wrap; border-bottom: 1px solid var(--border); background: var(--white); }
-.section-nav a { font-size: 13px; font-weight: 500; color: var(--gray); padding: 8px 0 12px; transition: color 0.15s; }
-.section-nav a:hover { color: var(--black); }
-.section-nav__sep { width: 1px; height: 12px; background: var(--border); margin: 0 16px; flex-shrink: 0; }
+/* SECTION NAV */
+.sec-nav { position: sticky; top: 76px; background: var(--white); border-bottom: 1px solid var(--border); z-index: 90; }
+.sec-nav__inner { display: flex; justify-content: center; gap: 2px; padding: 0 20px; overflow-x: auto; max-width: 1400px; margin: 0 auto; }
+.sec-nav a { padding: 14px 18px; font-size: 12px; color: var(--gray-dark); letter-spacing: 0.8px; text-transform: uppercase; font-weight: 500; white-space: nowrap; transition: color 0.15s; border-bottom: 2px solid transparent; }
+.sec-nav a:hover { color: var(--black); border-bottom-color: var(--black); }
 
-.section--white { background: var(--white); }
+/* SECTIONS */
+.section { padding: 70px 28px; }
 .section--alt { background: var(--bg-alt); }
-.section__inner { max-width: var(--max-width); margin: 0 auto; padding: 32px 40px; }
+.section--white { background: var(--white); padding: 70px 28px; }
+.section__inner { max-width: 960px; margin: 0 auto; }
+.section__eyebrow { font-size: 11px; letter-spacing: 1.8px; color: var(--gray); text-transform: uppercase; font-weight: 600; margin-bottom: 12px; text-align: center; }
+.section__title { font-family: var(--display); font-size: 30px; color: var(--black); text-align: center; letter-spacing: -0.6px; margin-bottom: 38px; font-weight: 500; }
 
-.listing-head__address { font-family: var(--font-display); font-size: 28px; font-weight: 600; color: var(--black); line-height: 1.3; letter-spacing: -1px; }
-.listing-head__meta { margin-top: 8px; font-size: 14px; color: var(--gray); display: flex; align-items: center; flex-wrap: wrap; gap: 6px; }
-.listing-head__dot { width: 3px; height: 3px; border-radius: 50%; background: var(--gray-light); flex-shrink: 0; }
+/* OVERVIEW */
+.overview { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 24px; max-width: 900px; margin: 0 auto; }
+.overview__item { text-align: center; padding: 22px 14px; background: var(--white); border: 1px solid var(--border); }
+.overview__label { font-size: 11px; letter-spacing: 1.4px; color: var(--gray); text-transform: uppercase; font-weight: 600; margin-bottom: 8px; }
+.overview__value { font-family: var(--display); font-size: 22px; color: var(--black); font-weight: 500; letter-spacing: -0.3px; }
 
-.quick-facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border: 1px solid var(--border); border-radius: 4px; overflow: hidden; margin-top: 24px; }
-.quick-fact { padding: 14px 18px; border-bottom: 1px solid var(--border); border-right: 1px solid var(--border); background: var(--white); }
-.quick-fact__label { font-size: 11px; font-weight: 500; color: var(--gray); text-transform: uppercase; letter-spacing: 0.5px; }
-.quick-fact__value { font-size: 15px; font-weight: 600; color: var(--black); margin-top: 2px; }
+/* DESCRIPTION */
+.description { max-width: 720px; margin: 0 auto; font-size: 15px; color: var(--gray-dark); line-height: 1.85; }
+.description p { margin-bottom: 16px; }
+.description p:last-child { margin-bottom: 0; }
 
-.description__text { font-size: 15px; line-height: 1.8; color: var(--gray-dark); max-width: 760px; }
+/* UPDATES */
+.updates-table { max-width: 560px; margin: 0 auto; border: 1px solid var(--border); background: var(--white); }
+.updates-row { display: flex; align-items: baseline; gap: 24px; padding: 14px 22px; border-bottom: 1px solid var(--border); font-size: 13px; }
+.updates-row:last-child { border-bottom: none; }
+.updates-year { font-weight: 700; color: var(--gray); letter-spacing: 0.5px; flex-shrink: 0; width: 44px; }
+.updates-items { color: var(--dark); line-height: 1.5; }
 
-.updates-block { max-width: 760px; margin: 0 auto; }
-.updates__title { font-size: 16px; font-weight: 700; color: var(--black); margin-bottom: 16px; letter-spacing: -0.2px; text-align: center; }
-.updates__grid { display: flex; flex-direction: column; border: 1px solid var(--border); border-radius: 4px; overflow: hidden; }
-.updates__row { display: flex; align-items: baseline; gap: 24px; padding: 11px 20px; border-bottom: 1px solid var(--border); background: var(--white); }
-.updates__row:last-child { border-bottom: none; }
-.updates__year { font-size: 12px; font-weight: 700; color: var(--gray); letter-spacing: 0.5px; flex-shrink: 0; width: 36px; }
-.updates__items { font-size: 14px; color: var(--dark); line-height: 1.5; }
+/* FEATURES */
+.features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0; border-top: 1px solid var(--border); border-left: 1px solid var(--border); max-width: 960px; margin: 0 auto; }
+.features-grid__item { display: flex; justify-content: space-between; padding: 14px 20px; border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); font-size: 13px; }
+.features-grid__label { color: var(--gray-dark); }
+.features-grid__value { color: var(--black); font-weight: 500; text-align: right; }
 
-.features__title { font-size: 16px; font-weight: 700; color: var(--black); margin-bottom: 20px; letter-spacing: -0.2px; }
-.features__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 40px; }
-.features__row { display: flex; justify-content: space-between; align-items: baseline; padding: 9px 0; border-bottom: 1px solid #eee; }
-.features__label { font-size: 13px; font-weight: 500; color: var(--gray); }
-.features__value { font-size: 14px; font-weight: 500; color: var(--dark); text-align: right; max-width: 55%; }
+/* INTERIOR FEATURES */
+.interior-list { max-width: 720px; margin: 0 auto; columns: 2; column-gap: 40px; font-size: 14px; color: var(--gray-dark); }
+.interior-list li { padding: 7px 0; list-style: none; position: relative; padding-left: 18px; break-inside: avoid; }
+.interior-list li::before { content: ''; position: absolute; left: 0; top: 15px; width: 6px; height: 6px; background: var(--black); border-radius: 50%; }
 
-.map-section__title { font-size: 16px; font-weight: 700; color: var(--black); margin-bottom: 16px; }
-.map-wrap { width: 100%; height: 380px; border: 1px solid var(--border); overflow: hidden; }
-.map-wrap iframe { width: 100%; height: 100%; border: 0; }
+/* TAXES */
+.tax-table { max-width: 560px; margin: 0 auto; border: 1px solid var(--border); }
+.tax-row { display: flex; justify-content: space-between; padding: 14px 22px; border-bottom: 1px solid var(--border); font-size: 13px; }
+.tax-row:last-child { border-bottom: none; }
+.tax-row--total { background: var(--bg-alt); font-weight: 600; }
+.tax-row__label { color: var(--gray-dark); }
+.tax-row__value { color: var(--black); }
 
-.nbhd__title { font-family: var(--font-display); font-size: 26px; font-weight: 600; color: var(--black); letter-spacing: -0.5px; text-align: center; margin-bottom: 8px; }
-.nbhd__eyebrow { font-size: 11px; font-weight: 600; color: var(--gray); letter-spacing: 2px; text-transform: uppercase; text-align: center; margin-bottom: 6px; }
-.nbhd__body { max-width: 760px; margin: 0 auto 28px; font-size: 15px; line-height: 1.8; color: var(--gray-dark); }
-.nbhd__body p { margin-bottom: 14px; }
-.nbhd__body p:last-child { margin-bottom: 0; }
-.video-wrap { position: relative; width: 100%; max-width: 800px; margin: 0 auto; aspect-ratio: 16/9; border: 1px solid var(--border); border-radius: 4px; overflow: hidden; }
-.video-wrap iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+/* LOCATION */
+.map-wrap { max-width: 960px; margin: 0 auto; aspect-ratio: 16/9; border: 1px solid var(--border); overflow: hidden; }
+.map-wrap iframe { width: 100%; height: 100%; border: 0; display: block; }
 
-.contact__inner { max-width: 560px; margin: 0 auto; text-align: center; }
-.contact__title { font-size: 22px; font-weight: 700; color: var(--black); margin-bottom: 6px; }
-.contact__subtitle { font-size: 14px; color: var(--gray-dark); margin-bottom: 28px; line-height: 1.7; }
-.contact__card { display: flex; align-items: center; gap: 16px; background: var(--white); border: 1px solid var(--border); padding: 20px; text-align: left; margin-bottom: 16px; }
+/* NEIGHBORHOOD VIDEO */
+.video-wrap { max-width: 960px; margin: 30px auto 0; aspect-ratio: 16/9; border: 1px solid var(--border); overflow: hidden; position: relative; }
+.video-wrap iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; display: block; }
+
+/* CONTACT */
+.contact { max-width: 520px; margin: 0 auto; background: var(--white); padding: 36px 30px; border: 1px solid var(--border); }
+.contact__subtitle { font-size: 13px; color: var(--gray-dark); text-align: center; line-height: 1.7; margin-bottom: 26px; }
+.contact__card { display: flex; gap: 18px; align-items: center; padding: 20px; background: var(--bg-alt); margin-bottom: 22px; }
 .contact__photo { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; object-position: center 20%; background: #ddd; flex-shrink: 0; }
-.contact__name { font-size: 17px; font-weight: 600; color: var(--black); }
-.contact__role { font-size: 13px; color: var(--gray); margin-top: 1px; }
-.contact__phone-num { font-size: 14px; font-weight: 600; color: var(--dark); margin-top: 4px; }
-
-.contact__actions { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-bottom: 14px; }
-.contact__action { display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 12px 8px; font-size: 13px; font-weight: 600; border: 1px solid var(--border); color: var(--dark); background: var(--white); transition: background 0.15s, border-color 0.15s; }
-.contact__action:hover { background: var(--bg-alt); border-color: var(--gray-light); }
-.contact__action svg { width: 15px; height: 15px; fill: currentColor; }
-
+.contact__name { font-family: var(--display); font-size: 20px; color: var(--black); font-weight: 500; letter-spacing: -0.3px; }
+.contact__title { font-size: 11px; color: var(--gray); letter-spacing: 1px; text-transform: uppercase; margin-top: 3px; }
+.contact__phone { font-size: 13px; color: var(--gray-dark); margin-top: 4px; font-weight: 500; }
+.contact__actions { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 14px; }
+.contact__btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 12px 8px; font-size: 13px; font-weight: 600; border: 1px solid var(--black); color: var(--black); background: var(--white); cursor: pointer; font-family: var(--font); transition: all 0.15s; text-align: center; }
+.contact__btn:hover { background: var(--black); color: var(--white); }
+.contact__btn svg { width: 14px; height: 14px; fill: currentColor; }
+.contact__cta { width: 100%; padding: 14px; font-size: 13px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; border: none; color: var(--white); background: var(--black); cursor: pointer; font-family: var(--font); transition: background 0.15s; display: block; text-align: center; margin-bottom: 12px; }
+.contact__cta:hover { background: #000; }
 .contact__share { display: inline-flex; align-items: center; justify-content: center; gap: 6px; width: 100%; padding: 12px 8px; margin-bottom: 20px; font-size: 13px; font-weight: 600; border: none; color: var(--white); background: var(--red); cursor: pointer; font-family: var(--font); transition: background 0.15s; }
 .contact__share:hover { background: #a8180a; }
 .contact__share svg { width: 15px; height: 15px; fill: currentColor; }
+.contact__pitch { margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 12px; color: var(--gray-dark); line-height: 1.7; text-align: center; }
 
+/* TOAST */
 .share-toast { position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%) translateY(120%); background: var(--black); color: var(--white); padding: 12px 24px; font-size: 13px; z-index: 200; transition: transform 0.3s ease; border-radius: 3px; }
 .share-toast.visible { transform: translateX(-50%) translateY(0); }
 
-.offmarket { max-width: 560px; margin: 24px auto 0; text-align: center; border-top: 1px solid var(--border); padding-top: 24px; }
-.offmarket__title { font-size: 15px; font-weight: 700; color: var(--black); margin-bottom: 8px; }
-.offmarket__text { font-size: 13px; color: var(--gray-dark); line-height: 1.7; }
-
+/* FOOTER */
 .footer { background: var(--black); padding: 36px 40px; text-align: center; }
 .footer__logo { margin-bottom: 16px; }
-.footer__logo img { height: 22px; margin: 0 auto; mix-blend-mode: screen; }
+.footer__logo img { height: 56px; margin: 0 auto; mix-blend-mode: screen; }
 .footer__text { font-size: 11px; color: #999; max-width: 640px; margin: 0 auto; line-height: 1.7; }
 .footer__badge { margin-top: 20px; }
-.footer__badge img { mix-blend-mode: screen; height: 48px; width: auto; margin: 0 auto; display: block; opacity: 0.8; }
+.footer__badge img { height: 56px; width: auto; margin: 0 auto; display: block; opacity: 0.8; mix-blend-mode: screen; }
 
-@media (max-width: 768px) {
-  .header { padding: 0 20px; }
-  .section__inner { padding: 24px 20px; }
-  .section-nav { padding: 12px 20px 0; }
-  .section-nav__sep { margin: 0 10px; }
-  .section-nav a { font-size: 12px; }
-  .price-bar { padding: 20px; }
-  .price-bar__inner { flex-direction: column; align-items: flex-start; }
-  .price-bar__cta { width: 100%; justify-content: center; }
-  .photo-gallery { aspect-ratio: 4/3; max-height: 50vh; }
-  .features__grid { grid-template-columns: 1fr; gap: 0; }
-  .map-wrap { height: 260px; }
-  .contact__card { flex-direction: column; text-align: center; }
+/* RESPONSIVE */
+@media (max-width: 760px) {
+  .photo-gallery { height: 55vh; min-height: 320px; }
+  .photo-gallery__nav { width: 40px; height: 40px; }
+  .photo-gallery__nav--prev { left: 12px; }
+  .photo-gallery__nav--next { right: 12px; }
+  .price-bar { padding: 28px 20px; }
+  .price-bar__address { font-size: 26px; }
+  .price-bar__facts { gap: 18px; font-size: 12px; }
+  .price-bar__facts span + span::before { margin-right: 18px; }
+  .section { padding: 50px 20px; }
+  .section--white { padding: 50px 20px; }
+  .section__title { font-size: 24px; margin-bottom: 28px; }
+  .sec-nav { top: 76px; }
+  .sec-nav__inner { justify-content: flex-start; }
+  .sec-nav a { padding: 12px 14px; font-size: 11px; }
+  .interior-list { columns: 1; }
   .contact__actions { grid-template-columns: 1fr; }
-  .quick-facts { grid-template-columns: 1fr 1fr; }
-  .footer { padding: 28px 20px; }
-}
-@media (max-width: 480px) {
-  .quick-facts { grid-template-columns: 1fr; }
-  .price-bar__stats { gap: 16px; flex-wrap: wrap; }
 }
 </style>
 </head>
 <body>
 
+<!-- HEADER -->
 <header class="header">
-  <a href="https://www.atproperties.com/dc/" class="header__logo">
-    <img src="assets/logo.jpg" alt="RLAH @properties">
-  </a>
-  <a href="tel:2024940110" class="header__phone">202.494.0110</a>
+  <div class="header__inner">
+    <a href="https://www.atproperties.com/dc/" class="header__logo">
+      <img src="assets/logo.jpg" alt="RLAH @properties">
+    </a>
+    <div class="header__tag">Office Exclusive</div>
+  </div>
 </header>
 
-<div class="exclusive-ribbon">Office Exclusive &mdash; Contact Agent for Details</div>
+<!-- EXCLUSIVE RIBBON -->
+<div class="ribbon">Office Exclusive — Contact Agent for Details</div>
 
+<!-- PHOTO GALLERY -->
 <div class="photo-gallery" id="photo-gallery">
-  <div class="g-slide active"><img src="photos/01.jpg" alt="315 I St NE #2 Photo 1"></div>
-  <div class="g-slide"><img src="photos/02.jpg" alt="315 I St NE #2 Photo 2"></div>
-  <div class="g-slide"><img src="photos/03.jpg" alt="315 I St NE #2 Photo 3"></div>
-  <div class="g-slide"><img src="photos/04.jpg" alt="315 I St NE #2 Photo 4"></div>
-  <div class="g-slide"><img src="photos/05.jpg" alt="315 I St NE #2 Photo 5"></div>
-  <div class="g-slide"><img src="photos/06.jpg" alt="315 I St NE #2 Photo 6"></div>
-  <div class="g-slide"><img src="photos/07.jpg" alt="315 I St NE #2 Photo 7"></div>
-  <div class="g-slide"><img src="photos/08.jpg" alt="315 I St NE #2 Photo 8"></div>
-  <div class="g-slide"><img src="photos/09.jpg" alt="315 I St NE #2 Photo 9"></div>
-  <div class="g-slide"><img src="photos/10.jpg" alt="315 I St NE #2 Photo 10"></div>
-  <div class="g-slide"><img src="photos/11.jpg" alt="315 I St NE #2 Photo 11"></div>
-  <div class="g-slide"><img src="photos/12.jpg" alt="315 I St NE #2 Photo 12"></div>
-  <div class="g-slide"><img src="photos/13.jpg" alt="315 I St NE #2 Photo 13"></div>
-  <div class="g-slide"><img src="photos/14.jpg" alt="315 I St NE #2 Photo 14"></div>
-  <div class="g-slide"><img src="photos/15.jpg" alt="315 I St NE #2 Photo 15"></div>
-  <div class="g-slide"><img src="photos/16.jpg" alt="315 I St NE #2 Photo 16"></div>
-  <div class="g-slide"><img src="photos/17.jpg" alt="315 I St NE #2 Photo 17"></div>
-  <div class="g-slide"><img src="photos/18.jpg" alt="315 I St NE #2 Photo 18"></div>
-  <div class="g-slide"><img src="photos/19.jpg" alt="315 I St NE #2 Photo 19"></div>
-  <div class="g-slide"><img src="photos/20.jpg" alt="315 I St NE #2 Photo 20"></div>
-  <div class="g-slide"><img src="photos/21.jpg" alt="315 I St NE #2 Photo 21"></div>
-  <div class="g-slide"><img src="photos/22.jpg" alt="315 I St NE #2 Photo 22"></div>
-  <div class="g-slide"><img src="photos/23.jpg" alt="315 I St NE #2 Photo 23"></div>
-  <div class="g-slide"><img src="photos/24.jpg" alt="315 I St NE #2 Photo 24"></div>
-  <div class="g-slide"><img src="photos/25.jpg" alt="315 I St NE #2 Photo 25"></div>
-  <div class="g-slide"><img src="photos/26.jpg" alt="315 I St NE #2 Photo 26"></div>
-  <div class="g-slide"><img src="photos/27.jpg" alt="315 I St NE #2 Photo 27"></div>
-  <div class="g-slide"><img src="photos/28.jpg" alt="315 I St NE #2 Photo 28"></div>
-  <div class="g-slide"><img src="photos/29.jpg" alt="315 I St NE #2 Photo 29"></div>
-  <div class="g-slide"><img src="photos/30.jpg" alt="315 I St NE #2 Photo 30"></div>
-  <div class="g-slide"><img src="photos/31.jpg" alt="315 I St NE #2 Photo 31"></div>
-  <div class="g-slide"><img src="photos/32.jpg" alt="315 I St NE #2 Photo 32"></div>
-  <div class="g-slide"><img src="photos/33.jpg" alt="315 I St NE #2 Photo 33"></div>
-  <div class="g-slide"><img src="photos/34.jpg" alt="315 I St NE #2 Photo 34"></div>
-  <button class="gallery__btn gallery__btn--prev" id="photo-prev" aria-label="Previous photo">
-    <svg viewBox="0 0 24 24"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/></svg>
+  <div class="g-slide active"><img src="photos/01.jpg" alt="315 I St NE #2 exterior"></div>
+  <div class="g-slide"><img src="photos/02.jpg" alt="315 I St NE #2 front facade"></div>
+  <div class="g-slide"><img src="photos/03.jpg" alt="315 I St NE #2 entry"></div>
+  <div class="g-slide"><img src="photos/04.jpg" alt="315 I St NE #2 kitchen and dining"></div>
+  <div class="g-slide"><img src="photos/05.jpg" alt="315 I St NE #2 kitchen"></div>
+  <div class="g-slide"><img src="photos/06.jpg" alt="315 I St NE #2 kitchen"></div>
+  <div class="g-slide"><img src="photos/07.jpg" alt="315 I St NE #2 kitchen"></div>
+  <div class="g-slide"><img src="photos/08.jpg" alt="315 I St NE #2 kitchen and living"></div>
+  <div class="g-slide"><img src="photos/09.jpg" alt="315 I St NE #2 open living"></div>
+  <div class="g-slide"><img src="photos/10.jpg" alt="315 I St NE #2 open concept"></div>
+  <div class="g-slide"><img src="photos/11.jpg" alt="315 I St NE #2 living room"></div>
+  <div class="g-slide"><img src="photos/12.jpg" alt="315 I St NE #2 living room"></div>
+  <div class="g-slide"><img src="photos/13.jpg" alt="315 I St NE #2 living room"></div>
+  <div class="g-slide"><img src="photos/14.jpg" alt="315 I St NE #2 living room"></div>
+  <div class="g-slide"><img src="photos/15.jpg" alt="315 I St NE #2 sitting area"></div>
+  <div class="g-slide"><img src="photos/16.jpg" alt="315 I St NE #2 office"></div>
+  <div class="g-slide"><img src="photos/17.jpg" alt="315 I St NE #2 dining"></div>
+  <div class="g-slide"><img src="photos/18.jpg" alt="315 I St NE #2 entry hallway"></div>
+  <div class="g-slide"><img src="photos/19.jpg" alt="315 I St NE #2 upstairs hallway"></div>
+  <div class="g-slide"><img src="photos/20.jpg" alt="315 I St NE #2 primary bedroom"></div>
+  <div class="g-slide"><img src="photos/21.jpg" alt="315 I St NE #2 primary bedroom"></div>
+  <div class="g-slide"><img src="photos/22.jpg" alt="315 I St NE #2 bedroom"></div>
+  <div class="g-slide"><img src="photos/23.jpg" alt="315 I St NE #2 bedroom"></div>
+  <div class="g-slide"><img src="photos/24.jpg" alt="315 I St NE #2 bedroom"></div>
+  <div class="g-slide"><img src="photos/25.jpg" alt="315 I St NE #2 primary bath"></div>
+  <div class="g-slide"><img src="photos/26.jpg" alt="315 I St NE #2 full bath"></div>
+  <div class="g-slide"><img src="photos/27.jpg" alt="315 I St NE #2 powder room"></div>
+  <div class="g-slide"><img src="photos/28.jpg" alt="315 I St NE #2 laundry"></div>
+  <div class="g-slide"><img src="photos/29.jpg" alt="315 I St NE #2 roof deck"></div>
+  <div class="g-slide"><img src="photos/30.jpg" alt="315 I St NE #2 roof deck"></div>
+  <div class="g-slide"><img src="photos/31.jpg" alt="315 I St NE #2 roof deck view"></div>
+  <div class="g-slide"><img src="photos/32.jpg" alt="315 I St NE #2 roof deck grill"></div>
+  <div class="g-slide"><img src="photos/33.jpg" alt="315 I St NE #2 roof deck"></div>
+  <div class="g-slide"><img src="photos/34.jpg" alt="315 I St NE #2 parking"></div>
+  <button class="photo-gallery__nav photo-gallery__nav--prev" id="photo-prev" aria-label="Previous photo">
+    <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
   </button>
-  <button class="gallery__btn gallery__btn--next" id="photo-next" aria-label="Next photo">
-    <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+  <button class="photo-gallery__nav photo-gallery__nav--next" id="photo-next" aria-label="Next photo">
+    <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
   </button>
-  <div class="gallery__count"><span id="photo-idx">1</span> / 34</div>
+  <div class="photo-gallery__counter"><span id="photo-idx">1</span> / 34</div>
 </div>
 
+<!-- PRICE BAR -->
 <div class="price-bar">
-  <div class="price-bar__inner">
-    <div class="price-bar__price">$935,000</div>
-    <div class="price-bar__stats">
-      <div class="price-bar__stat"><div class="price-bar__stat-num">3</div><div class="price-bar__stat-label">beds</div></div>
-      <div class="price-bar__stat"><div class="price-bar__stat-num">2</div><div class="price-bar__stat-label">baths</div></div>
-      <div class="price-bar__stat"><div class="price-bar__stat-num">1</div><div class="price-bar__stat-label">half bath</div></div>
-      <div class="price-bar__stat"><div class="price-bar__stat-num">1,699</div><div class="price-bar__stat-label">square ft</div></div>
-    </div>
-    <a href="#contact" class="price-bar__cta">
-      <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-      Contact Agent
-    </a>
+  <div class="price-bar__address">315 I Street NE #2</div>
+  <div class="price-bar__city">Washington, DC 20002 &nbsp;·&nbsp; NoMa</div>
+  <div class="price-bar__price">$935,000</div>
+  <div class="price-bar__facts">
+    <span>3 Bedrooms</span>
+    <span>2.5 Baths</span>
+    <span>1,699 Sq Ft</span>
+    <span>Built 2014</span>
   </div>
 </div>
 
-<nav class="section-nav">
-  <a href="#overview">Overview</a><span class="section-nav__sep"></span>
-  <a href="#description">Description</a><span class="section-nav__sep"></span>
-  <a href="#updates">Updates</a><span class="section-nav__sep"></span>
-  <a href="#features">Full Features</a><span class="section-nav__sep"></span>
-  <a href="#taxes">Taxes</a><span class="section-nav__sep"></span>
-  <a href="#location">Location</a><span class="section-nav__sep"></span>
-  <a href="#neighborhood">Neighborhood</a><span class="section-nav__sep"></span>
-  <a href="#contact">Contact</a>
+<!-- SECTION NAV -->
+<nav class="sec-nav">
+  <div class="sec-nav__inner">
+    <a href="#overview">Overview</a>
+    <a href="#description">Description</a>
+    <a href="#updates">Updates</a>
+    <a href="#features">Features</a>
+    <a href="#interior">Interior</a>
+    <a href="#taxes">Taxes</a>
+    <a href="#location">Location</a>
+    <a href="#neighborhood">Neighborhood</a>
+    <a href="#schools">Schools</a>
+    <a href="#contact">Contact</a>
+  </div>
 </nav>
 
-<div class="section--white" id="overview">
+<!-- OVERVIEW -->
+<section class="section section--white" id="overview">
   <div class="section__inner">
-    <h1 class="listing-head__address">315 I Street NE #2<br>Washington, DC 20002</h1>
-    <div class="listing-head__meta">
-      <span>Office Exclusive</span><span class="listing-head__dot"></span>
-      <span>Condominium</span><span class="listing-head__dot"></span>
-      <span>NoMa</span>
-    </div>
-    <div class="quick-facts">
-      <div class="quick-fact"><div class="quick-fact__label">Property Type</div><div class="quick-fact__value">Condominium</div></div>
-      <div class="quick-fact"><div class="quick-fact__label">Year Built</div><div class="quick-fact__value">2014</div></div>
-      <div class="quick-fact"><div class="quick-fact__label">Square Feet</div><div class="quick-fact__value">1,699</div></div>
-      <div class="quick-fact"><div class="quick-fact__label">Beds / Baths</div><div class="quick-fact__value">3 / 2.5</div></div>
-      <div class="quick-fact"><div class="quick-fact__label">Levels</div><div class="quick-fact__value">2</div></div>
-      <div class="quick-fact"><div class="quick-fact__label">Parking</div><div class="quick-fact__value">Assigned Carport</div></div>
-    </div>
-  </div>
-</div>
-
-<div class="section--alt" id="description">
-  <div class="section__inner">
-    <p class="description__text">Welcome to 315 I Street NE #2, a spacious and sun-filled 3-bedroom, 2.5-bath condo offering nearly 1,700 square feet of modern living in the heart of NoMa. Built in 2014, this thoughtfully designed home features an open-concept layout that seamlessly connects the living, dining, and kitchen spaces, creating an ideal flow for both everyday living and entertaining. The kitchen is anchored by a large island with ample storage and workspace, while oversized windows fill the home with natural light throughout. The well-proportioned bedrooms include a comfortable primary suite with a private bath, along with flexible space for guests, a home office, or additional living needs. Hardwood floors, contemporary finishes, and built-in storage enhance both style and functionality, while a newly updated roof deck (2026) provides the perfect setting for relaxing or entertaining above the city. Just moments from Union Market, the H Street Corridor, Metro access, and some of DC&rsquo;s best dining and shopping, this home offers an ideal blend of space, convenience, and vibrant city living.</p>
-  </div>
-</div>
-
-<div class="section--white" id="updates">
-  <div class="section__inner">
-    <div class="updates-block">
-      <h2 class="updates__title">Recent Updates</h2>
-      <div class="updates__grid">
-        <div class="updates__row">
-          <span class="updates__year">2026</span>
-          <span class="updates__items">Newly updated roof deck</span>
-        </div>
+    <div class="section__eyebrow">At a Glance</div>
+    <h2 class="section__title">Overview</h2>
+    <div class="overview">
+      <div class="overview__item">
+        <div class="overview__label">Bedrooms</div>
+        <div class="overview__value">3</div>
+      </div>
+      <div class="overview__item">
+        <div class="overview__label">Baths</div>
+        <div class="overview__value">2.5</div>
+      </div>
+      <div class="overview__item">
+        <div class="overview__label">Interior</div>
+        <div class="overview__value">1,699 SF</div>
+      </div>
+      <div class="overview__item">
+        <div class="overview__label">Year Built</div>
+        <div class="overview__value">2014</div>
+      </div>
+      <div class="overview__item">
+        <div class="overview__label">Parking</div>
+        <div class="overview__value">Carport</div>
       </div>
     </div>
   </div>
-</div>
+</section>
 
-<div class="section--alt" id="features">
+<!-- DESCRIPTION -->
+<section class="section section--alt" id="description">
   <div class="section__inner">
-    <h2 class="features__title">Full Features</h2>
-    <div class="features__grid">
-      <div class="features__row"><span class="features__label">Property Type</span><span class="features__value">Residential Condominium</span></div>
-      <div class="features__row"><span class="features__label">Structure Type</span><span class="features__value">Unit / Flat / Apartment</span></div>
-      <div class="features__row"><span class="features__label">Unit Building Type</span><span class="features__value">Garden 1 - 4 Floors</span></div>
-      <div class="features__row"><span class="features__label">Architecture Style</span><span class="features__value">Federal</span></div>
-      <div class="features__row"><span class="features__label">Construction</span><span class="features__value">Brick, HardiPlank</span></div>
-      <div class="features__row"><span class="features__label">Year Built</span><span class="features__value">2014</span></div>
-      <div class="features__row"><span class="features__label">Levels</span><span class="features__value">2</span></div>
-      <div class="features__row"><span class="features__label">Unit Entry Floor</span><span class="features__value">1</span></div>
-      <div class="features__row"><span class="features__label">Square Feet</span><span class="features__value">1,699</span></div>
-      <div class="features__row"><span class="features__label">Beds</span><span class="features__value">3</span></div>
-      <div class="features__row"><span class="features__label">Baths</span><span class="features__value">2 Full / 1 Half</span></div>
-      <div class="features__row"><span class="features__label">Cooling</span><span class="features__value">Central A/C (Electric)</span></div>
-      <div class="features__row"><span class="features__label">Heating</span><span class="features__value">Central (Natural Gas)</span></div>
-      <div class="features__row"><span class="features__label">Hot Water</span><span class="features__value">Electric</span></div>
-      <div class="features__row"><span class="features__label">Washer / Dryer in Unit</span><span class="features__value">Yes</span></div>
-      <div class="features__row"><span class="features__label">Fireplace</span><span class="features__value">No</span></div>
-      <div class="features__row"><span class="features__label">Basement</span><span class="features__value">No</span></div>
-      <div class="features__row"><span class="features__label">Pool</span><span class="features__value">No</span></div>
-      <div class="features__row"><span class="features__label">Water Source</span><span class="features__value">Public</span></div>
-      <div class="features__row"><span class="features__label">Sewer</span><span class="features__value">Public Sewer</span></div>
-      <div class="features__row"><span class="features__label">Parking</span><span class="features__value">Assigned Detached Carport (1), Driveway, Alley, Off-Street</span></div>
-      <div class="features__row"><span class="features__label">Pets</span><span class="features__value">Case by Case &mdash; Cats &amp; Dogs OK</span></div>
-      <div class="features__row"><span class="features__label">Ownership</span><span class="features__value">Condominium</span></div>
-      <div class="features__row"><span class="features__label">Zoning</span><span class="features__value">R-4</span></div>
+    <div class="section__eyebrow">About the Home</div>
+    <h2 class="section__title">Description</h2>
+    <div class="description">
+      <p>Welcome to 315 I Street NE #2, a spacious and sun-filled 3-bedroom, 2.5-bath condo offering nearly 1,700 square feet of modern living in the heart of NoMa. Built in 2014, this thoughtfully designed home features an open-concept layout that seamlessly connects the living, dining, and kitchen spaces, creating an ideal flow for both everyday living and entertaining.</p>
+      <p>The kitchen is anchored by a large island with ample storage and workspace, while oversized windows fill the home with natural light throughout. The well-proportioned bedrooms include a comfortable primary suite with a private bath, along with flexible space for guests, a home office, or additional living needs.</p>
+      <p>Hardwood floors, contemporary finishes, and built-in storage enhance both style and functionality, while a newly updated roof deck (2026) provides the perfect setting for relaxing or entertaining above the city. Just moments from Union Market, the H Street Corridor, Metro access, and some of DC&rsquo;s best dining and shopping, this home offers an ideal blend of space, convenience, and vibrant city living.</p>
     </div>
   </div>
-</div>
+</section>
 
-<div class="section--white" id="taxes">
+<!-- UPDATES -->
+<section class="section section--white" id="updates">
   <div class="section__inner">
-    <h2 class="features__title">Taxes &amp; Assessments</h2>
-    <div class="features__grid">
-      <div class="features__row"><span class="features__label">Tax Annual Amount</span><span class="features__value">$6,540</span></div>
-      <div class="features__row"><span class="features__label">Tax Year</span><span class="features__value">2025</span></div>
-      <div class="features__row"><span class="features__label">Tax Assessed Value</span><span class="features__value">$904,660</span></div>
-      <div class="features__row"><span class="features__label">Improvement Value</span><span class="features__value">$633,260</span></div>
-      <div class="features__row"><span class="features__label">Land Value</span><span class="features__value">$271,400</span></div>
-      <div class="features__row"><span class="features__label">Tax ID</span><span class="features__value">0776 // 2005</span></div>
-      <div class="features__row"><span class="features__label">Price per Sq Ft</span><span class="features__value">$550.32</span></div>
+    <div class="section__eyebrow">Recent Improvements</div>
+    <h2 class="section__title">Updates</h2>
+    <div class="updates-table">
+      <div class="updates-row">
+        <span class="updates-year">2026</span>
+        <span class="updates-items">Newly updated roof deck</span>
+      </div>
     </div>
   </div>
-</div>
+</section>
 
-<div class="section--alt" id="location">
+<!-- FEATURES -->
+<section class="section section--alt" id="features">
   <div class="section__inner">
-    <h2 class="map-section__title">Location</h2>
-    <div class="features__grid" style="margin-bottom:20px">
-      <div class="features__row"><span class="features__label">Neighborhood</span><span class="features__value">NoMa</span></div>
-      <div class="features__row"><span class="features__label">Legal Subdivision</span><span class="features__value">Old City 1</span></div>
-      <div class="features__row"><span class="features__label">City</span><span class="features__value">Washington</span></div>
-      <div class="features__row"><span class="features__label">Zip Code</span><span class="features__value">20002</span></div>
-      <div class="features__row"><span class="features__label">County</span><span class="features__value">Washington</span></div>
-      <div class="features__row"><span class="features__label">School District</span><span class="features__value">District of Columbia Public Schools</span></div>
+    <div class="section__eyebrow">The Details</div>
+    <h2 class="section__title">Full Features</h2>
+    <div class="features-grid">
+      <div class="features-grid__item"><span class="features-grid__label">Property Type</span><span class="features-grid__value">Condominium</span></div>
+      <div class="features-grid__item"><span class="features-grid__label">Structure</span><span class="features-grid__value">Unit / Flat / Apartment</span></div>
+      <div class="features-grid__item"><span class="features-grid__label">Unit Type</span><span class="features-grid__value">Garden 1 – 4 Floors</span></div>
+      <div class="features-grid__item"><span class="features-grid__label">Style</span><span class="features-grid__value">Federal</span></div>
+      <div class="features-grid__item"><span class="features-grid__label">Year Built</span><span class="features-grid__value">2014</span></div>
+      <div class="features-grid__item"><span class="features-grid__label">Levels</span><span class="features-grid__value">2</span></div>
+      <div class="features-grid__item"><span class="features-grid__label">Entry Floor</span><span class="features-grid__value">1</span></div>
+      <div class="features-grid__item"><span class="features-grid__label">Interior SF</span><span class="features-grid__value">1,699</span></div>
+      <div class="features-grid__item"><span class="features-grid__label">Bedrooms</span><span class="features-grid__value">3</span></div>
+      <div class="features-grid__item"><span class="features-grid__label">Bathrooms</span><span class="features-grid__value">2 Full / 1 Half</span></div>
+      <div class="features-grid__item"><span class="features-grid__label">Construction</span><span class="features-grid__value">Brick, HardiPlank</span></div>
+      <div class="features-grid__item"><span class="features-grid__label">Heating</span><span class="features-grid__value">Central — Natural Gas</span></div>
+      <div class="features-grid__item"><span class="features-grid__label">Cooling</span><span class="features-grid__value">Central A/C</span></div>
+      <div class="features-grid__item"><span class="features-grid__label">Hot Water</span><span class="features-grid__value">Electric</span></div>
+      <div class="features-grid__item"><span class="features-grid__label">Washer / Dryer</span><span class="features-grid__value">In Unit</span></div>
+      <div class="features-grid__item"><span class="features-grid__label">Sewer</span><span class="features-grid__value">Public</span></div>
+      <div class="features-grid__item"><span class="features-grid__label">Water</span><span class="features-grid__value">Public</span></div>
+      <div class="features-grid__item"><span class="features-grid__label">Parking</span><span class="features-grid__value">Assigned Detached Carport (1)</span></div>
+      <div class="features-grid__item"><span class="features-grid__label">Pets</span><span class="features-grid__value">Case by Case — Cats &amp; Dogs</span></div>
+      <div class="features-grid__item"><span class="features-grid__label">Ownership</span><span class="features-grid__value">Condominium</span></div>
+      <div class="features-grid__item"><span class="features-grid__label">Zoning</span><span class="features-grid__value">R-4</span></div>
+      <div class="features-grid__item"><span class="features-grid__label">Subdivision</span><span class="features-grid__value">Old City 1</span></div>
+      <div class="features-grid__item"><span class="features-grid__label">County</span><span class="features-grid__value">Washington, DC</span></div>
+      <div class="features-grid__item"><span class="features-grid__label">Tax ID</span><span class="features-grid__value">0776 // 2005</span></div>
     </div>
+  </div>
+</section>
+
+<!-- INTERIOR FEATURES -->
+<section class="section section--white" id="interior">
+  <div class="section__inner">
+    <div class="section__eyebrow">Inside the Home</div>
+    <h2 class="section__title">Interior Features</h2>
+    <ul class="interior-list">
+      <li>Open-concept living / dining / kitchen layout</li>
+      <li>Large kitchen island with storage and workspace</li>
+      <li>Oversized windows with abundant natural light</li>
+      <li>Primary suite with private en-suite bath</li>
+      <li>Three well-proportioned bedrooms</li>
+      <li>Hardwood floors throughout</li>
+      <li>Contemporary finishes and fixtures</li>
+      <li>Built-in storage</li>
+      <li>In-unit washer and dryer</li>
+      <li>Central heating and air conditioning</li>
+      <li>Private roof deck (updated 2026)</li>
+      <li>Assigned off-street parking</li>
+    </ul>
+  </div>
+</section>
+
+<!-- TAXES -->
+<section class="section section--alt" id="taxes">
+  <div class="section__inner">
+    <div class="section__eyebrow">Public Record</div>
+    <h2 class="section__title">Taxes &amp; Assessments</h2>
+    <div class="tax-table">
+      <div class="tax-row"><span class="tax-row__label">Tax Year</span><span class="tax-row__value">2025</span></div>
+      <div class="tax-row"><span class="tax-row__label">Annual Tax</span><span class="tax-row__value">$6,540</span></div>
+      <div class="tax-row"><span class="tax-row__label">Land Assessment</span><span class="tax-row__value">$271,400</span></div>
+      <div class="tax-row"><span class="tax-row__label">Improvement Assessment</span><span class="tax-row__value">$633,260</span></div>
+      <div class="tax-row tax-row--total"><span class="tax-row__label">Total Assessment</span><span class="tax-row__value">$904,660</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section class="section section--white" id="location">
+  <div class="section__inner">
+    <div class="section__eyebrow">Where It Is</div>
+    <h2 class="section__title">Location</h2>
     <div class="map-wrap">
-      <iframe src="https://maps.google.com/maps?q=315+I+St+NE,+Washington,+DC+20002&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="315 I St NE on map"></iframe>
+      <iframe
+        src="https://www.google.com/maps?q=315+I+St+NE,+Washington,+DC+20002&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Map of 315 I St NE #2, Washington, DC"></iframe>
     </div>
   </div>
-</div>
+</section>
 
-<div class="section--white" id="neighborhood">
+<!-- NEIGHBORHOOD -->
+<section class="section section--alt" id="neighborhood">
   <div class="section__inner">
-    <div class="nbhd__eyebrow">The Neighborhood</div>
-    <h2 class="nbhd__title">NoMa</h2>
-    <div class="nbhd__body">
+    <div class="section__eyebrow">The Neighborhood</div>
+    <h2 class="section__title">NoMa</h2>
+    <div class="description">
       <p>Discover the allure of NoMa, an up-and-coming district located north of Massachusetts Avenue NE in the nation&rsquo;s capital. From Union Station in the south to Q and R streets NE in the north, NoMa is a bustling hub for transportation, culture, and gastronomy.</p>
       <p>At the heart of the neighborhood lies Union Market, a renovated mid-century food hall that is a must-visit destination for foodies and gourmands alike. Union Market offers a wide variety of culinary delights, from gourmet spices and meats to high-end kitchen supplies. Notable restaurants and shops include the Michelin-starred Italian eatery Masseria and the Dolcezza Gelato &amp; Coffee Factory. The area surrounding the market is also home to a thriving creative scene, with businesses such as the Angelika movie theater and National Public Radio.</p>
       <p>NoMa&rsquo;s historical buildings have been revitalized and repurposed for contemporary uses. The Hecht&rsquo;s Warehouse, a century-old department store storage facility, has been transformed into a distillery and a vibrant dining destination. The Uline Arena, a venue that hosted the Beatles&rsquo; first U.S. concert, has been converted into a flagship REI store, among other businesses.</p>
@@ -368,49 +428,59 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
       <iframe src="https://player.vimeo.com/video/276264084?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="NoMa"></iframe>
     </div>
   </div>
-</div>
+</section>
 
-<div class="section--alt" id="contact">
+<!-- SCHOOLS -->
+<section class="section section--white" id="schools">
   <div class="section__inner">
-    <div class="contact__inner">
-      <h2 class="contact__title">Interested in This Property?</h2>
+    <div class="section__eyebrow">Education</div>
+    <h2 class="section__title">Schools</h2>
+    <div class="description" style="text-align:center;">
+      <p>Served by <strong>District of Columbia Public Schools</strong>. Buyers should independently verify school assignments with DCPS as boundaries may change.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section section--alt" id="contact">
+  <div class="section__inner">
+    <div class="section__eyebrow">Listed By</div>
+    <h2 class="section__title">Contact the Listing Agent</h2>
+    <div class="contact">
       <p class="contact__subtitle">This is an office exclusive listing at the direction of the seller, who has requested that the marketing of this property not be publicly displayed across all real estate portals at this time. Contact the listing agent directly for showing details, pricing, and additional information.</p>
       <div class="contact__card">
-        <img class="contact__photo" src="photos/agent.jpg" alt="Lorin Mones">
+        <img src="photos/agent.jpg" alt="Lorin Mones" class="contact__photo">
         <div>
           <div class="contact__name">Lorin Mones</div>
-          <div class="contact__role">RLAH @properties</div>
-          <div class="contact__phone-num">(202) 494-0110</div>
+          <div class="contact__title">RLAH @properties</div>
+          <div class="contact__phone">(202) 494-0110</div>
         </div>
       </div>
       <div class="contact__actions">
-        <a href="tel:2024940110" class="contact__action">
-          <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1.003 1.003 0 011.01-.24c1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.1.31.03.66-.25 1.02l-2.2 2.2z"/></svg>
+        <a class="contact__btn" href="tel:+12024940110">
+          <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
           Call
         </a>
-        <a href="sms:2024940110?&body=Hi%20Lorin%2C%20I%27m%20interested%20in%20the%20office%20exclusive%20at%20315%20I%20St%20NE%20%232.%20Could%20you%20share%20more%20details%3F" class="contact__action">
-          <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.17L4 17.17V4h16v12zM7 9h2v2H7zm4 0h2v2h-2zm4 0h2v2h-2z"/></svg>
+        <a class="contact__btn" href="sms:+12024940110?&body=Hi%20Lorin%2C%20I'm%20interested%20in%20315%20I%20St%20NE%20%232">
+          <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
           Text
         </a>
-        <a href="mailto:lorin@homeswithmones.com?subject=315%20I%20St%20NE%20%232%20-%20Office%20Exclusive" class="contact__action">
-          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        <a class="contact__btn" href="mailto:lorin@homeswithmones.com?subject=315%20I%20St%20NE%20%232%20-%20Office%20Exclusive">
+          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
           Email
         </a>
       </div>
+      <a class="contact__cta" href="mailto:lorin@homeswithmones.com?subject=315%20I%20St%20NE%20%232%20-%20Office%20Exclusive%20-%20Showing%20Request">Request a Showing</a>
       <button class="contact__share" id="shareBtn">
         <svg viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z"/></svg>
         Share This Listing
       </button>
-      <div class="offmarket">
-        <div class="offmarket__title">Looking for More Off-Market Opportunities?</div>
-        <p class="offmarket__text">RLAH @properties maintains the largest off-market property database in the DMV. Whether you&rsquo;re looking to access listings before they hit the public market, or you&rsquo;re interested in marketing your own property with this level of privacy and exclusivity, reach out through the contact information above.</p>
-      </div>
+      <p class="contact__pitch">RLAH @properties maintains the largest off-market property database in the DMV. Whether you&rsquo;re looking to access listings before they hit the public market, or you&rsquo;re interested in marketing your own property with this level of privacy and exclusivity, reach out through the contact information above.</p>
     </div>
   </div>
-</div>
+</section>
 
-<div class="share-toast" id="shareToast">Link copied to clipboard</div>
-
+<!-- FOOTER -->
 <footer class="footer">
   <div class="footer__logo">
     <a href="https://www.atproperties.com/dc/">
@@ -425,7 +495,10 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   </div>
 </footer>
 
+<div class="share-toast" id="shareToast">Link copied to clipboard</div>
+
 <script>
+/* PHOTO GALLERY */
 (function () {
   var slides = document.querySelectorAll('#photo-gallery .g-slide');
   var total  = slides.length;
@@ -456,6 +529,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   }, { passive: true });
 }());
 
+/* SHARE BUTTON */
 document.getElementById('shareBtn').addEventListener('click', function () {
   var toast = document.getElementById('shareToast');
   var url   = window.location.href;
