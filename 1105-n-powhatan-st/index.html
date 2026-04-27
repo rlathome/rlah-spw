@@ -120,6 +120,19 @@ a { color: inherit; text-decoration: none; }
 .share-toast { position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%) translateY(120%); background: var(--black); color: var(--white); padding: 12px 24px; font-size: 13px; z-index: 200; transition: transform 0.3s ease; border-radius: 3px; }
 .share-toast.visible { transform: translateX(-50%) translateY(0); }
 
+.video-wrap { max-width: 960px; margin: 0 auto; aspect-ratio: 16/9; border: 1px solid var(--border); overflow: hidden; position: relative; }
+.video-wrap iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; display: block; }
+
+.fp-gallery { position: relative; background: var(--bg-alt); max-width: 960px; margin: 0 auto; aspect-ratio: 4/3; border: 1px solid var(--border); overflow: hidden; }
+.fp-gallery .g-slide img { width: 100%; height: 100%; object-fit: contain; background: var(--white); }
+.fp-nav { position: absolute; top: 50%; transform: translateY(-50%); width: 42px; height: 42px; border-radius: 50%; background: rgba(34,34,34,0.75); border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; z-index: 5; transition: background 0.15s; }
+.fp-nav:hover { background: rgba(34,34,34,0.92); }
+.fp-nav svg { width: 18px; height: 18px; fill: var(--white); }
+.fp-nav--prev { left: 16px; }
+.fp-nav--next { right: 16px; }
+.fp-label-wrap { text-align: center; margin-top: 18px; font-size: 13px; letter-spacing: 1px; color: var(--gray-dark); text-transform: uppercase; font-weight: 500; }
+.fp-counter { color: var(--gray); font-size: 12px; margin-left: 10px; }
+
 .footer { background: var(--black); padding: 36px 40px; text-align: center; }
 .footer__logo { margin-bottom: 16px; }
 .footer__logo img { height: 56px; margin: 0 auto; mix-blend-mode: screen; }
@@ -161,7 +174,74 @@ a { color: inherit; text-decoration: none; }
 <div class="ribbon">Office Exclusive — Contact Agent for Details</div>
 
 <div class="photo-gallery" id="photo-gallery">
-  <div class="g-slide active"><img src="photos/01.jpg" alt="1105 N Powhatan St"></div>
+  <div class="g-slide active"><img src="photos/01.jpg" alt="1105 N Powhatan St — photo 1" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/02.jpg" alt="1105 N Powhatan St — photo 2" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/03.jpg" alt="1105 N Powhatan St — photo 3" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/04.jpg" alt="1105 N Powhatan St — photo 4" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/05.jpg" alt="1105 N Powhatan St — photo 5" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/06.jpg" alt="1105 N Powhatan St — photo 6" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/07.jpg" alt="1105 N Powhatan St — photo 7" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/08.jpg" alt="1105 N Powhatan St — photo 8" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/09.jpg" alt="1105 N Powhatan St — photo 9" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/10.jpg" alt="1105 N Powhatan St — photo 10" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/11.jpg" alt="1105 N Powhatan St — photo 11" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/12.jpg" alt="1105 N Powhatan St — photo 12" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/13.jpg" alt="1105 N Powhatan St — photo 13" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/14.jpg" alt="1105 N Powhatan St — photo 14" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/15.jpg" alt="1105 N Powhatan St — photo 15" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/16.jpg" alt="1105 N Powhatan St — photo 16" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/17.jpg" alt="1105 N Powhatan St — photo 17" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/18.jpg" alt="1105 N Powhatan St — photo 18" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/19.jpg" alt="1105 N Powhatan St — photo 19" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/20.jpg" alt="1105 N Powhatan St — photo 20" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/21.jpg" alt="1105 N Powhatan St — photo 21" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/22.jpg" alt="1105 N Powhatan St — photo 22" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/23.jpg" alt="1105 N Powhatan St — photo 23" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/24.jpg" alt="1105 N Powhatan St — photo 24" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/25.jpg" alt="1105 N Powhatan St — photo 25" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/26.jpg" alt="1105 N Powhatan St — photo 26" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/27.jpg" alt="1105 N Powhatan St — photo 27" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/28.jpg" alt="1105 N Powhatan St — photo 28" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/29.jpg" alt="1105 N Powhatan St — photo 29" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/30.jpg" alt="1105 N Powhatan St — photo 30" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/31.jpg" alt="1105 N Powhatan St — photo 31" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/32.jpg" alt="1105 N Powhatan St — photo 32" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/33.jpg" alt="1105 N Powhatan St — photo 33" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/34.jpg" alt="1105 N Powhatan St — photo 34" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/35.jpg" alt="1105 N Powhatan St — photo 35" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/36.jpg" alt="1105 N Powhatan St — photo 36" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/37.jpg" alt="1105 N Powhatan St — photo 37" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/38.jpg" alt="1105 N Powhatan St — photo 38" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/39.jpg" alt="1105 N Powhatan St — photo 39" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/40.jpg" alt="1105 N Powhatan St — photo 40" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/41.jpg" alt="1105 N Powhatan St — photo 41" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/42.jpg" alt="1105 N Powhatan St — photo 42" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/43.jpg" alt="1105 N Powhatan St — photo 43" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/44.jpg" alt="1105 N Powhatan St — photo 44" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/45.jpg" alt="1105 N Powhatan St — photo 45" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/46.jpg" alt="1105 N Powhatan St — photo 46" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/47.jpg" alt="1105 N Powhatan St — photo 47" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/48.jpg" alt="1105 N Powhatan St — photo 48" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/49.jpg" alt="1105 N Powhatan St — photo 49" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/50.jpg" alt="1105 N Powhatan St — photo 50" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/51.jpg" alt="1105 N Powhatan St — photo 51" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/52.jpg" alt="1105 N Powhatan St — photo 52" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/53.jpg" alt="1105 N Powhatan St — photo 53" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/54.jpg" alt="1105 N Powhatan St — photo 54" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/55.jpg" alt="1105 N Powhatan St — photo 55" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/56.jpg" alt="1105 N Powhatan St — photo 56" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/57.jpg" alt="1105 N Powhatan St — photo 57" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/58.jpg" alt="1105 N Powhatan St — photo 58" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/59.jpg" alt="1105 N Powhatan St — photo 59" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/60.jpg" alt="1105 N Powhatan St — photo 60" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/61.jpg" alt="1105 N Powhatan St — photo 61" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/62.jpg" alt="1105 N Powhatan St — photo 62" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/63.jpg" alt="1105 N Powhatan St — photo 63" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/64.jpg" alt="1105 N Powhatan St — photo 64" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/65.jpg" alt="1105 N Powhatan St — photo 65" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/66.jpg" alt="1105 N Powhatan St — photo 66" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/67.jpg" alt="1105 N Powhatan St — photo 67" loading="lazy"></div>
+  <div class="g-slide"><img src="photos/68.jpg" alt="1105 N Powhatan St — photo 68" loading="lazy"></div>
   <button class="photo-gallery__nav photo-gallery__nav--prev" id="photo-prev" aria-label="Previous photo">
     <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
   </button>
@@ -187,6 +267,8 @@ a { color: inherit; text-decoration: none; }
   <div class="sec-nav__inner">
     <a href="#overview">Overview</a>
     <a href="#description">Description</a>
+    <a href="#video">Video</a>
+    <a href="#floorplans">Floor Plans</a>
     <a href="#features">Features</a>
     <a href="#interior">Interior</a>
     <a href="#taxes">Taxes</a>
@@ -220,6 +302,36 @@ a { color: inherit; text-decoration: none; }
       <p>Welcome home to this fully expanded and renovated center-hall colonial in Madison Manor, one of Arlington's most beloved neighborhoods! This stunning brick colonial checks every box: 3,679 sqft across three finished levels, 4 bedrooms, 3 full + 2 half baths, formal living and dining rooms, a sun room, open kitchen with custom cabinetry and a large island, upstairs laundry, finished basement, hardwood floors, wood-burning fireplace, and incredible storage — all wrapped in classic curb appeal with side and back patios, bicycle storage shed, and a private yard in full bloom.</p>
       <p>East Falls Church Metro, commuter routes, multi-purpose trails, schools, shops, and restaurants are all just minutes away. Contact me for details or to schedule a private tour!</p>
     </div>
+  </div>
+</section>
+
+<section class="section section--white" id="video">
+  <div class="section__inner">
+    <div class="section__eyebrow">Take the Tour</div>
+    <h2 class="section__title">Video</h2>
+    <div class="video-wrap">
+      <iframe src="https://listings.peterpapoulakos.com/videos/019dccac-103f-7078-92dc-a6dd60531f39" allow="autoplay; fullscreen; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" title="1105 N Powhatan St — Video Tour"></iframe>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt" id="floorplans">
+  <div class="section__inner">
+    <div class="section__eyebrow">Layout</div>
+    <h2 class="section__title">Floor Plans</h2>
+    <div class="fp-gallery" id="fp-gallery">
+      <div class="g-slide active"><img src="photos/fp-01.jpg" alt="Basement floor plan"></div>
+      <div class="g-slide"><img src="photos/fp-02.jpg" alt="First floor plan"></div>
+      <div class="g-slide"><img src="photos/fp-03.jpg" alt="Second floor plan"></div>
+      <div class="g-slide"><img src="photos/fp-04.jpg" alt="All floors combined"></div>
+      <button class="fp-nav fp-nav--prev" id="fp-prev" aria-label="Previous floor plan">
+        <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+      </button>
+      <button class="fp-nav fp-nav--next" id="fp-next" aria-label="Next floor plan">
+        <svg viewBox="0 0 24 24"><path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg>
+      </button>
+    </div>
+    <div class="fp-label-wrap"><span id="fp-label">Basement</span><span class="fp-counter"><span id="fp-idx">1</span> / 4</span></div>
   </div>
 </section>
 
@@ -424,6 +536,34 @@ a { color: inherit; text-decoration: none; }
 
   var tx = 0;
   var el = document.getElementById('photo-gallery');
+  el.addEventListener('touchstart', function (e) { tx = e.changedTouches[0].screenX; }, { passive: true });
+  el.addEventListener('touchend',   function (e) {
+    var d = tx - e.changedTouches[0].screenX;
+    if (Math.abs(d) > 50) goTo(cur + (d > 0 ? 1 : -1));
+  }, { passive: true });
+}());
+
+(function () {
+  var slides  = document.querySelectorAll('#fp-gallery .g-slide');
+  var labels  = ['Basement', 'Floor 1', 'Floor 2', 'All Floors'];
+  var total   = slides.length;
+  var cur     = 0;
+  var idxEl   = document.getElementById('fp-idx');
+  var labelEl = document.getElementById('fp-label');
+
+  function goTo(i) {
+    slides[cur].classList.remove('active');
+    cur = ((i % total) + total) % total;
+    slides[cur].classList.add('active');
+    idxEl.textContent   = cur + 1;
+    labelEl.textContent = labels[cur];
+  }
+
+  document.getElementById('fp-prev').addEventListener('click', function () { goTo(cur - 1); });
+  document.getElementById('fp-next').addEventListener('click', function () { goTo(cur + 1); });
+
+  var tx = 0;
+  var el = document.getElementById('fp-gallery');
   el.addEventListener('touchstart', function (e) { tx = e.changedTouches[0].screenX; }, { passive: true });
   el.addEventListener('touchend',   function (e) {
     var d = tx - e.changedTouches[0].screenX;
