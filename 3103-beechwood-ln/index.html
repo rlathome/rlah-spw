@@ -52,6 +52,12 @@ a { color: inherit; text-decoration: none; }
 .photo-gallery__nav--next { right: 24px; }
 .photo-gallery__counter { position: absolute; bottom: 20px; right: 24px; background: rgba(0,0,0,0.55); color: var(--white); padding: 6px 14px; font-size: 12px; letter-spacing: 0.5px; z-index: 5; border-radius: 2px; }
 
+/* OPEN HOUSE BANNER - remove this block after the event */
+.open-house { background: var(--bg-alt); border-bottom: 1px solid var(--border); padding: 17px 28px; text-align: center; }
+.open-house__label { display: inline-block; vertical-align: middle; background: var(--black); color: var(--white); font-size: 11px; letter-spacing: 1.6px; text-transform: uppercase; font-weight: 700; padding: 6px 13px; margin-right: 15px; }
+.open-house__detail { display: inline-block; vertical-align: middle; font-family: var(--display); font-size: 19px; color: var(--black); font-weight: 500; letter-spacing: -0.2px; }
+/* END OPEN HOUSE BANNER */
+
 .price-bar { padding: 38px 28px; text-align: center; background: var(--white); border-bottom: 1px solid var(--border); }
 .price-bar__address { font-family: var(--display); font-size: 34px; color: var(--black); letter-spacing: -0.8px; font-weight: 500; margin-bottom: 6px; }
 .price-bar__city { font-size: 13px; color: var(--gray); letter-spacing: 1.4px; text-transform: uppercase; margin-bottom: 22px; }
@@ -119,6 +125,16 @@ a { color: inherit; text-decoration: none; }
 .contact__share svg { width: 15px; height: 15px; fill: currentColor; }
 .contact__pitch { margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 12px; color: var(--gray-dark); line-height: 1.7; text-align: center; }
 
+.fp-gallery { position: relative; background: var(--bg-alt); max-width: 960px; margin: 0 auto; aspect-ratio: 4/3; border: 1px solid var(--border); overflow: hidden; }
+.fp-gallery .g-slide img { width: 100%; height: 100%; object-fit: contain; background: var(--white); }
+.fp-nav { position: absolute; top: 50%; transform: translateY(-50%); width: 42px; height: 42px; border-radius: 50%; background: rgba(34,34,34,0.75); border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; z-index: 5; transition: background 0.15s; }
+.fp-nav:hover { background: rgba(34,34,34,0.92); }
+.fp-nav svg { width: 18px; height: 18px; fill: var(--white); }
+.fp-nav--prev { left: 16px; }
+.fp-nav--next { right: 16px; }
+.fp-label-wrap { text-align: center; margin-top: 18px; font-size: 13px; letter-spacing: 1px; color: var(--gray-dark); text-transform: uppercase; font-weight: 500; }
+.fp-counter { color: var(--gray); font-size: 12px; margin-left: 10px; }
+
 .share-toast { position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%) translateY(120%); background: var(--black); color: var(--white); padding: 12px 24px; font-size: 13px; z-index: 200; opacity: 0; pointer-events: none; transition: transform 0.3s ease, opacity 0.3s ease; border-radius: 3px; }
 .share-toast.visible { transform: translateX(-50%) translateY(0); opacity: 1; }
 
@@ -134,6 +150,9 @@ a { color: inherit; text-decoration: none; }
   .photo-gallery__nav { width: 40px; height: 40px; }
   .photo-gallery__nav--prev { left: 12px; }
   .photo-gallery__nav--next { right: 12px; }
+  .open-house { padding: 15px 20px; }
+  .open-house__label { display: block; margin: 0 auto 9px; max-width: max-content; }
+  .open-house__detail { display: block; font-size: 17px; }
   .price-bar { padding: 28px 20px; }
   .price-bar__address { font-size: 26px; }
   .price-bar__facts { gap: 18px; font-size: 12px; }
@@ -210,6 +229,12 @@ a { color: inherit; text-decoration: none; }
   <div class="photo-gallery__counter"><span id="photo-idx">1</span> / 38</div>
 </div>
 
+<!-- OPEN HOUSE BANNER - remove this block after the event -->
+<div class="open-house">
+  <span class="open-house__label">Open House</span><span class="open-house__detail">Saturday, October 3&nbsp;&nbsp;&middot;&nbsp;&nbsp;1&ndash;3 PM</span>
+</div>
+<!-- END OPEN HOUSE BANNER -->
+
 <div class="price-bar">
   <div class="price-bar__address">3103 Beechwood Lane</div>
   <div class="price-bar__city">Falls Church, VA 22042&nbsp;&middot;&nbsp;Sleepy Hollow</div>
@@ -228,6 +253,7 @@ a { color: inherit; text-decoration: none; }
   <div class="sec-nav__inner">
     <a href="#overview">Overview</a>
     <a href="#description">Description</a>
+    <a href="#floorplans">Floor Plans</a>
     <a href="#features">Features</a>
     <a href="#interior">Interior</a>
     <a href="#taxes">Taxes</a>
@@ -237,7 +263,7 @@ a { color: inherit; text-decoration: none; }
   </div>
 </nav>
 
-<section class="section section--white" id="overview">
+<section class="section section--alt" id="overview">
   <div class="section__inner">
     <div class="section__eyebrow">At a Glance</div>
     <h2 class="section__title">Overview</h2>
@@ -270,7 +296,7 @@ a { color: inherit; text-decoration: none; }
   </div>
 </section>
 
-<section class="section section--alt" id="description">
+<section class="section section--white" id="description">
   <div class="section__inner">
     <div class="section__eyebrow">About the Home</div>
     <h2 class="section__title">Description</h2>
@@ -279,6 +305,26 @@ a { color: inherit; text-decoration: none; }
       <p>Originally built in 1957, the home has been extensively recreated and expanded into more than 4,100 square feet of beautifully finished living space. Oversized windows connect nearly every room to the surrounding landscape, while thoughtful additions provide exceptional one-level living and multigenerational flexibility with two primary suites, three additional bedrooms, four full baths, and a powder room. Durable, high-quality improvements extend throughout the home, including extensively upgraded systems, smart technology enhancements, and a whole-house generator.</p>
       <p>At the center is a distinctive gourmet kitchen with classic craftsmanship, generous gathering space, and unforgettable candy-apple-red Viking appliances. Substantial yet intimate, sophisticated yet relaxed, 3103 Beechwood Lane combines enduring quality, privacy, natural beauty, and convenience in a home that is truly best experienced in person.</p>
     </div>
+  </div>
+</section>
+
+<section class="section section--alt" id="floorplans">
+  <div class="section__inner">
+    <div class="section__eyebrow">Layout</div>
+    <h2 class="section__title">Floor Plans</h2>
+    <div class="fp-gallery" id="fp-gallery">
+      <div class="g-slide active"><img src="photos/fp-01.jpg" alt="Lower Level floor plan"></div>
+      <div class="g-slide"><img src="photos/fp-02.jpg" alt="Main Level floor plan" loading="lazy"></div>
+      <div class="g-slide"><img src="photos/fp-03.jpg" alt="Upper Level floor plan" loading="lazy"></div>
+      <div class="g-slide"><img src="photos/site-plan.jpg" alt="Site plan &mdash; 1.75 acres" loading="lazy"></div>
+      <button class="fp-nav fp-nav--prev" id="fp-prev" aria-label="Previous floor plan">
+        <svg viewBox="0 0 24 24"><path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+      </button>
+      <button class="fp-nav fp-nav--next" id="fp-next" aria-label="Next floor plan">
+        <svg viewBox="0 0 24 24"><path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+      </button>
+    </div>
+    <div class="fp-label-wrap"><span id="fp-label">Lower Level</span><span class="fp-counter"><span id="fp-idx">1</span> / 4</span></div>
   </div>
 </section>
 
@@ -299,6 +345,8 @@ a { color: inherit; text-decoration: none; }
       <div class="features-grid__item"><span class="features-grid__label">Second Floor</span><span class="features-grid__value">1,255 Sq Ft</span></div>
       <div class="features-grid__item"><span class="features-grid__label">Lower Level</span><span class="features-grid__value">631 Sq Ft</span></div>
       <div class="features-grid__item"><span class="features-grid__label">Attic</span><span class="features-grid__value">88 Sq Ft</span></div>
+      <div class="features-grid__item"><span class="features-grid__label">Unfinished Lower Level</span><span class="features-grid__value">76 Sq Ft</span></div>
+      <div class="features-grid__item"><span class="features-grid__label">Garden Shed</span><span class="features-grid__value">15'5 &times; 12'</span></div>
       <div class="features-grid__item"><span class="features-grid__label">Garage</span><span class="features-grid__value">2 Car &middot; 435 Sq Ft</span></div>
       <div class="features-grid__item"><span class="features-grid__label">Carport</span><span class="features-grid__value">1 Car</span></div>
       <div class="features-grid__item"><span class="features-grid__label">Fireplace</span><span class="features-grid__value">1 Wood Burning</span></div>
@@ -320,14 +368,19 @@ a { color: inherit; text-decoration: none; }
     <div class="section__eyebrow">Inside the Home</div>
     <h2 class="section__title">Interior Features</h2>
     <ul class="interior-list">
-      <li>Two primary suites &mdash; 13.8 &times; 21 and 24 &times; 13</li>
-      <li>Three additional bedrooms &mdash; 11.5 &times; 9.8, 9.4 &times; 9.8, 10.6 &times; 13</li>
-      <li>Gourmet kitchen with candy-apple-red Viking appliances &mdash; 11 &times; 15.10</li>
-      <li>Breakfast room &mdash; 8.10 &times; 15.10</li>
-      <li>Living room with wood-burning fireplace &mdash; 15 &times; 11.6</li>
-      <li>Family room &mdash; 22.9 &times; 25.7</li>
-      <li>Dedicated laundry room &mdash; 5.1 &times; 14</li>
-      <li>Finished lower level &mdash; 25 &times; 20</li>
+      <li>Two primary suites &mdash; 13'8 &times; 21' and 24'1 &times; 13'</li>
+      <li>Primary suite dressing room (9'9 &times; 7'10) plus walk-in closet</li>
+      <li>Three additional bedrooms &mdash; 11'5 &times; 9'8, 9'4 &times; 9'8, 10'6 &times; 13'</li>
+      <li>Gourmet kitchen with candy-apple-red Viking appliances &mdash; 11' &times; 15'10</li>
+      <li>Breakfast room open to the kitchen &mdash; 8'10 &times; 15'10</li>
+      <li>Family room &mdash; 22'9 &times; 25'7</li>
+      <li>Living room &mdash; 15' &times; 11'6</li>
+      <li>Separate dining room &mdash; 12' &times; 11'6</li>
+      <li>Wood-burning fireplace shared by the family and dining rooms</li>
+      <li>Lower-level recreation room with beverage fridge and half bath &mdash; 25'1 &times; 20'3</li>
+      <li>Dedicated laundry room &mdash; 5'1 &times; 14'4</li>
+      <li>Two-car garage (19' &times; 20'3) plus a covered carport</li>
+      <li>Garden shed &mdash; 15'5 &times; 12'</li>
       <li>Oversized windows throughout connecting rooms to the landscape</li>
       <li>Exceptional one-level living with multigenerational flexibility</li>
       <li>Extensively upgraded systems and smart technology enhancements</li>
@@ -456,6 +509,34 @@ a { color: inherit; text-decoration: none; }
 
   var tx = 0;
   var el = document.getElementById('photo-gallery');
+  el.addEventListener('touchstart', function (e) { tx = e.changedTouches[0].screenX; }, { passive: true });
+  el.addEventListener('touchend',   function (e) {
+    var d = tx - e.changedTouches[0].screenX;
+    if (Math.abs(d) > 50) goTo(cur + (d > 0 ? 1 : -1));
+  }, { passive: true });
+}());
+
+(function () {
+  var slides  = document.querySelectorAll('#fp-gallery .g-slide');
+  var labels  = ['Lower Level', 'Main Level', 'Upper Level', 'Site Plan'];
+  var total   = slides.length;
+  var cur     = 0;
+  var idxEl   = document.getElementById('fp-idx');
+  var labelEl = document.getElementById('fp-label');
+
+  function goTo(i) {
+    slides[cur].classList.remove('active');
+    cur = ((i % total) + total) % total;
+    slides[cur].classList.add('active');
+    idxEl.textContent   = cur + 1;
+    labelEl.textContent = labels[cur];
+  }
+
+  document.getElementById('fp-prev').addEventListener('click', function () { goTo(cur - 1); });
+  document.getElementById('fp-next').addEventListener('click', function () { goTo(cur + 1); });
+
+  var tx = 0;
+  var el = document.getElementById('fp-gallery');
   el.addEventListener('touchstart', function (e) { tx = e.changedTouches[0].screenX; }, { passive: true });
   el.addEventListener('touchend',   function (e) {
     var d = tx - e.changedTouches[0].screenX;
